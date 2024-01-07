@@ -12,108 +12,114 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .container {
-
+        .youtube-video {
+            aspect-ratio: 16 / 9;
+            width: 80%;
         }
     </style>
     
 </head>
-<body class="font-sans">
-
+<body class="font-sans text-xl">
 
 <div class="pattern-zigzag-md bg-teal-800 text-green-700 px-[20px]">
-<div class="container max-w-[1000px] bg-sky-950 text-white mx-auto p-[20px]">
+<div class="container max-w-[1000px] bg-sky-950 text-emerald-100 mx-auto p-[20px]">
 
 <div class="text-center mb-4">
-    <h1 class="inline-block text-6xl md:text-8xl font-black pattern-grid-sm bg-teal-600 text-green-400 text-pattern pb-10">Welcome<br>to Susberg</h1>
+    <h1 class="inline-block text-6xl md:text-8xl font-black pattern-grid-sm bg-teal-600 text-green-400 text-pattern pb-5">Welcome<br>to Susberg</h1>
+</div>
+
+<div class="mb-8">
+    <iframe class="mx-auto youtube-video" src="https://www.youtube.com/embed/WS3Lkc6Gzlk?si=LnfHz-Ztx1v3QD2a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 
-<a href="https://playingcards.io/">PlayingCards.io</a>
+<div class="flex justify-center gap-[40px] mb-12 underline text-2xl md:text-4xl">
+    <a target="_blank" class="text-teal-400 hover:text-teal-200" href="https://playingcards.io/">PlayingCards.io</a>
+    <a class="text-teal-400 hover:text-teal-200" href="file.pcio">Download File</a>
+</div>
 
-<a href="file.pcio">Download PCIO File</a>
 
 
 
 
-<p>The quaint town of Susberg is under constant threat from the supernatural, but the citizens are completely oblivious to the danger. Thankfully, a group of young teens are the last line of defense against the forces that would conquer their hometown.</p>
-<p>Welcome to Susberg is a 2 to 4 player cooperative deck-building game where players assume the roles of an Athlete, Artist, Musician, or Inventor to thwart a variety of enemies.</p>
+<p class="text-2xl md:text-3xl mx-[20px] md:mx-[60px] mb-12">The quaint town of Susberg is under constant threat from the supernatural, but the citizens are completely oblivious to the danger. Thankfully, a group of young teens are the last line of defense against the forces that would conquer their hometown.</p>
+<p class="mb-4">Welcome to Susberg is a 2 to 4 player cooperative deck-building game where players assume the roles of an Athlete, Artist, Musician, or Inventor to thwart a variety of enemies.</p>
 
-<h1>Goal</h1>
-<p>Players must defeat all enemies in the enemy deck without being defeated to win the game.</p>
+<h1 class="text-4xl mt-8">Goal</h1>
+<p class="mb-4">Players must defeat all enemies in the enemy deck without being defeated to win the game.</p>
 
-<h1>Contents</h1>
-<p class="c0">(Section for use in printed rules)</p>
+<h1 class="text-4xl mt-8">Contents</h1>
+<p class="mb-4">(Section for use in printed rules)</p>
 
-<h1>Getting Started</h1>
+<h1 class="text-4xl mt-8">Getting Started</h1>
 
-<h2>Player Cards</h2>
-<p>Each player chooses one of the four characters, and gathers their cards. They take the 10 starting cards (cards with no Luck cost at the top right of the card) to make up their deck and the remainder becomes their Loot pile. Draw and spread out three cards from the Loot deck. The player can purchase these cards over the course of the game.</p>
+<h2 class="text-2xl mt-6">Player Cards</h2>
+<p class="mb-4">Each player chooses one of the four characters, and gathers their cards. They take the 10 starting cards (cards with no Luck cost at the top right of the card) to make up their deck and the remainder becomes their Loot pile. Draw and spread out three cards from the Loot deck. The player can purchase these cards over the course of the game.</p>
 
-<h2>Enemy Deck</h2>
-<p class="c0">Separate enemies into four piles according to their Level (seen at the bottom right of the card), and shuffle those piles. Using the chart below, build the enemy deck. Starting with the top row, take that number of cards from the corresponding card pile, and either start the deck, or add it on top of the deck.</p>
+<h2 class="text-2xl mt-6">Enemy Deck</h2>
+<p class="mb-4">Separate enemies into four piles according to their Level (seen at the bottom right of the card), and shuffle those piles. Using the chart below, build the enemy deck. Starting with the top row, take that number of cards from the corresponding card pile, and either start the deck, or add it on top of the deck.</p>
 
-<table>
+<table class="border-collapse border border-slate-500 mb-4">
     <tr>
-        <td></td>
-        <td>2 Players</td>
-        <td>3 Players</td>
-        <td>4 Players</td>
+        <td class="p-2 border border-slate-500"></td>
+        <td class="p-2 border border-slate-500">2 Players</td>
+        <td class="p-2 border border-slate-500">3 Players</td>
+        <td class="p-2 border border-slate-500">4 Players</td>
     </tr>
     <tr>
-        <td>Lv.3</td>
-        <td>2</td>
-        <td>2</td>
-        <td>2</td>
+        <td class="p-2 border border-slate-500">Lv.3</td>
+        <td class="p-2 border border-slate-500">2</td>
+        <td class="p-2 border border-slate-500">2</td>
+        <td class="p-2 border border-slate-500">2</td>
     </tr>
     <tr>
-        <td>Lv.4</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
+        <td class="p-2 border border-slate-500">Lv.4</td>
+        <td class="p-2 border border-slate-500">1</td>
+        <td class="p-2 border border-slate-500">1</td>
+        <td class="p-2 border border-slate-500">1</td>
     </tr>
     <tr>
-        <td>Lv.3</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
+        <td class="p-2 border border-slate-500">Lv.3</td>
+        <td class="p-2 border border-slate-500">5</td>
+        <td class="p-2 border border-slate-500">6</td>
+        <td class="p-2 border border-slate-500">7</td>
     </tr>
     <tr>
-        <td>Lv.2</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
+        <td class="p-2 border border-slate-500">Lv.2</td>
+        <td class="p-2 border border-slate-500">5</td>
+        <td class="p-2 border border-slate-500">6</td>
+        <td class="p-2 border border-slate-500">7</td>
     </tr>
     <tr>
-        <td>Lv.1</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
+        <td class="p-2 border border-slate-500">Lv.1</td>
+        <td class="p-2 border border-slate-500">5</td>
+        <td class="p-2 border border-slate-500">6</td>
+        <td class="p-2 border border-slate-500">7</td>
     </tr>
 </table>
 
-<h1>Playing the Game</h1>
-<p>Each turn has 5 phases. Start, Attack, Defend, Loot and then Clean.</p>
+<h1 class="text-4xl mt-8">Playing the Game</h1>
+<p class="mb-4">Each turn has 5 phases. Start, Attack, Defend, Loot and then Clean.</p>
 
-<h2>Start of Turn</h2>
-<p>At the start of the turn players draw 5 cards. If there are no cards to draw, shuffle the discard pile to make a new deck, and continue drawing from that. These cards can be played face up so that all players can see them, and can plan their turns together.</p>
-<p>Player&rsquo;s draw Loot to fill any empty loot piles. If the piles are already full, they may draw another Loot card.</p>
-<p>Draw enemies to fill the board. A 2-Player game has 3 enemies on the board. A 3-player game has 4. A 4-player game has 5.</p>
+<h2 class="text-2xl mt-6">Start of Turn</h2>
+<p class="mb-4">At the start of the turn players draw 5 cards. If there are no cards to draw, shuffle the discard pile to make a new deck, and continue drawing from that. These cards can be played face up so that all players can see them, and can plan their turns together.</p>
+<p class="mb-4">Player&rsquo;s draw Loot to fill any empty loot piles. If the piles are already full, they may draw another Loot card.</p>
+<p class="mb-4">Draw enemies to fill the board. A 2-Player game has 3 enemies on the board. A 3-player game has 4. A 4-player game has 5.</p>
 
-<h2>Attack</h2>
-<p>Each enemy has a number that represents their Health. This is at the top right of their cards. Players can use and combine Power (POWER) on enemies to defeat them. If the amount of Power used is equal to or greater than that enemy&rsquo;s Health, they are defeated and set aside for later in the turn.</p>
-<p>Power sets cannot be split between targets. For example, if a card has 2 Power next to each other as one icon, it must be used on one target. However, one card may have more than one Power set. Each set can be used on a different target</p>
+<h2 class="text-2xl mt-6">Attack</h2>
+<p class="mb-4">Each enemy has a number that represents their Health. This is at the top right of their cards. Players can use and combine Power (POWER) on enemies to defeat them. If the amount of Power used is equal to or greater than that enemy&rsquo;s Health, they are defeated and set aside for later in the turn.</p>
+<p class="mb-4">Power sets cannot be split between targets. For example, if a card has 2 Power next to each other as one icon, it must be used on one target. However, one card may have more than one Power set. Each set can be used on a different target</p>
 
-<h2>Defend</h2>
-<p>Each surviving enemy will now attack each player. Each enemy has their own amount of Power seen at the top left of their card. Each player must play Block (BLOCK) equal to or greater than an enemy&rsquo;s Power to not take damage. Block cannot be shared between players.</p>
-<p>If a player is unable to entirely block an enemy, they take 1 damage. Once a player has taken 5 damage, they are out of the game.</p>
+<h2 class="text-2xl mt-6">Defend</h2>
+<p class="mb-4">Each surviving enemy will now attack each player. Each enemy has their own amount of Power seen at the top left of their card. Each player must play Block (BLOCK) equal to or greater than an enemy&rsquo;s Power to not take damage. Block cannot be shared between players.</p>
+<p class="mb-4">If a player is unable to entirely block an enemy, they take 1 damage. Once a player has taken 5 damage, they are out of the game.</p>
 
-<h2>Loot</h2>
-<p>Players may now spend their Luck (LUCK) to buy Loot. In addition to Luck given by a player&rsquo;s cards, each defeated enemy gives each player 1 Luck. Player&rsquo;s may buy Loot from their piles for the amount of Luck seen at the top left of those cards.</p>
-<p>A player may also spend 1 Luck to draw a new Loot card, and place it on an empty Loot pile, or if all piles have a card, on top of a pile.</p>
+<h2 class="text-2xl mt-6">Loot</h2>
+<p class="mb-4">Players may now spend their Luck (LUCK) to buy Loot. In addition to Luck given by a player&rsquo;s cards, each defeated enemy gives each player 1 Luck. Player&rsquo;s may buy Loot from their piles for the amount of Luck seen at the top left of those cards.</p>
+<p class="mb-4">A player may also spend 1 Luck to draw a new Loot card, and place it on an empty Loot pile, or if all piles have a card, on top of a pile.</p>
 
-<h2>Clean Up</h2>
-<p>At the end of the turn, each player returns their cards to their discard pile. Defeated enemies are put into the defeated enemies pile as well.</p>
+<h2 class="text-2xl mt-6">Clean Up</h2>
+<p class="mb-4">At the end of the turn, each player returns their cards to their discard pile. Defeated enemies are put into the defeated enemies pile as well.</p>
 
 </div>
 </div>
