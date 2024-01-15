@@ -1,0 +1,147 @@
+
+*[stat] {
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+*[stat] span {
+    position: relative;
+    display: inline-block;
+}
+div[stat] {
+    padding-right: .35in;
+    height: 63px;
+    position: relative;
+}
+div[stat] span {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div[stat] span:before {
+    vertical-align:bottom;
+}
+span[stat] {
+    display: inline-block;
+    position: relative;
+    font-size: 1pt;
+    line-height: 0;
+    height: 28px;
+}
+*[stat] span:before{
+    content: '';
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+span[stat] span {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+div[stat=pwr] {
+    padding-right: .35in;
+}
+span[stat=pwr] {
+    padding-right: .09in;
+}
+*[stat=pwr] span:before{
+    margin-left: -.02in;
+    transform: rotate(4deg);
+}
+div[stat=pwr] span {
+    width: .35in;
+}
+span[stat=pwr] span {
+    width: .2in;
+}
+div[stat=pwr] span:before{
+    width: .7in;
+    height: .7in;
+}
+span[stat=pwr] span:before {
+    width: .35in;
+    height: .35in
+}
+
+
+div[stat=blk] {
+    padding-right: .25in;
+}
+span[stat=blk] {
+    padding-right: .06in;
+}
+*[stat=blk] span:before{
+    transform: rotate(4deg);
+}
+div[stat=blk] span {
+    width: .3in;
+}
+span[stat=blk] span {
+    width: .2in;
+}
+div[stat=blk] span:before{
+    width: .6in;
+    height: .6in;
+}
+span[stat=blk] span:before {
+    width: .3in;
+    height: .3in
+}
+
+
+
+
+div[stat=lck] {
+    padding-right: .4in;
+}
+span[stat=lck] {
+    padding-right: .1in;
+}
+*[stat=lck] span:before{
+    transform: rotate(6deg);
+}
+div[stat=lck] span {
+    width: .3in;
+}
+span[stat=lck] span {
+    width: .2in;
+}
+div[stat=lck] span:before{
+    width: .7in;
+    height: .7in;
+}
+span[stat=lck] span:before {
+    width: .35in;
+    height: .35in
+}
+
+
+
+div[stat=msc] {
+    padding-right: .25in;
+}
+span[stat=msc] {
+    padding-right: .06in;
+}
+*[stat=msc] span:before{
+    transform: rotate(0deg);
+}
+div[stat=msc] span {
+    width: .28in;
+}
+span[stat=msc] span {
+    width: .18in;
+}
+div[stat=msc] span:before{
+    width: .6in;
+    height: .6in;
+}
+span[stat=msc] span:before {
+    width: .3in;
+    height: .3in
+}
