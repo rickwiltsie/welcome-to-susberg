@@ -128,9 +128,11 @@
 
 
     <div x-data="{
+        baseUrl: 'https://raw.githubusercontent.com/rickwiltsie/welcome-to-susberg/main',
+        //baseUrl: '.',
         cards: [],
         async getCards() {
-            this.cards = Object.values(JSON.parse(await(await fetch('./cards/_fileNames.json')).text()));
+            this.cards = Object.values(JSON.parse(await(await fetch(this.baseUrl + '/cards/_fileNames.json')).text()));
             console.log(this.cards);
         } }" x-init="getCards()">
 
