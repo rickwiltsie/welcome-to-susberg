@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/pattern.css" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <style>
         .youtube-video {
@@ -43,7 +44,7 @@
 
 
 <p class="text-3xl md:text-3xl mx-[20px] md:mx-[60px] mb-12">The quaint town of Susberg is under constant threat from the supernatural, but the citizens are completely oblivious to the danger. Thankfully, a group of young teens are the last line of defense against the forces that would conquer their hometown.</p>
-<p class="mb-4">Welcome to Susberg is a 2 to 4 player cooperative deck-building game where players assume the roles of an Athlete, Artist, Musician, or Inventor to thwart a variety of enemies.</p>
+<p class="text-3xl md:text-3xl mx-[20px] md:mx-[60px] mb-12">Welcome to Susberg is a 2 to 4 player cooperative deck-building game where players assume the roles of an Athlete, Artist, Musician, or Inventor to thwart a variety of enemies.</p>
 
 <h1 class="text-5xl mt-8">Goal</h1>
 <p class="mb-4">Players must defeat all enemies in the enemy deck without being defeated to win the game.</p>
@@ -122,6 +123,27 @@
 
 <h2 class="text-3xl mt-6">Clean Up</h2>
 <p class="mb-4">At the end of the turn, each player returns their cards to their discard pile. Defeated enemies are put into the defeated enemies pile as well.</p>
+
+
+
+
+    <div x-data="{
+        cards: [],
+        async getCards() {
+            this.cards = Object.values(JSON.parse(await(await fetch('cards/_fileNames.json')).text()));
+            console.log(this.cards);
+        } }" x-init="getCards()">
+
+            <ul class="flex flex-wrap">
+                <template x-for="(value, index) in cards">
+                    <li class="w-1/4 p-2">
+                        <img :src="'cards/'+value" class="rounded rounded-[13px] overflow-hidden">
+                    </li>
+                </template>
+            </ul>
+
+    </div>
+
 
 </div>
 </div>
