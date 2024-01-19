@@ -213,7 +213,7 @@
                         <template x-for="(card) in cards">
                             <li class="w-1/4 p-2 relative">
                                 <img :src="'cards/'+card" class="rounded rounded-[13px] overflow-hidden">
-                                <div class="count absolute right-0 bottom-0 text-white text-3xl font-black" x-text="function() {
+                                <div class="count absolute right-0 -bottom-1 text-white text-3xl font-black" x-text="function() {
                                     if (card.split('_')[0] == 'Enemy') { return ''; }
                                     number = card.split('_')[1];
 
