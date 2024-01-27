@@ -72,7 +72,7 @@ function setCardData(spreadsheet)
       console.log(sheetName);
 
     // skip the template sheet
-    if (sheetName == 'v1-cards') {
+    if (sheetName == 'LatestVersion') {
         storeCards(sheet.data[0].rowData);
 
     } else if (sheetName == 'v1-enemies') {
@@ -105,7 +105,7 @@ function storeCards(rowData) {
         let fin = card.values[1].formattedValue;
 
 
-        if (fin > 0) {
+        if (fin > 0 || fin == 'n' || fin == 'x') {
             var storeCard = {
                 key: card.values[0].formattedValue,
                 count: card.values[1].formattedValue,

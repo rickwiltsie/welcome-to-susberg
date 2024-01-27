@@ -14,187 +14,216 @@
 
     <style>
         .youtube-video {
-            display: inline-block;
+            display: block;
+            vertical-align: bottom;
             aspect-ratio: 16 / 9;
             width: 100%;
         }
         .count {
-
             -webkit-text-stroke: 1pt black;
         }
     </style>
     
 </head>
-<body class="font-sans text-xl">
+<body class="font-sans text-xl bg-black px-[20px] md:px-[60px] lg:px-[80px]">
 
-<div class="pattern-zigzag-md bg-teal-800 text-green-700 px-[20px]">
-<div class="container max-w-[1000px] bg-sky-950 text-emerald-100 mx-auto p-[20px] pt-0">
+<div class="background fixed left-0 top-0 w-full select-none">
+    <img src="images/bg.png" class="absolute w-full h-auto max-w-[1100px] left-1/2 -translate-x-1/2 scale-[1.4] origin-top" alt="The mysterious town of Susberg at night">
+</div>
 
+<div class="container relative max-w-[900px] w-full bg-black text-emerald-100 lg:mx-auto px-[20px] pt-[40px] pb-[200px] mt-[30vh] md:mt-[50vh] lg:mt-[60vh] rounded-3xl">
 
+    <div class="sign absolute w-[200px] md:w-[300px] top-0 -translate-y-full h-auto overflow-hidden">
+        <img src="images/sign.png" alt="A road sign with the words 'Welcome to Susberg'.">
+    </div>
 
-<div class="text-left py-12 h-[200px] -ml-2 -mt-9">
-    <div class="inline-block text-center transform -skew-y-6 bg-green-700 px-16 py-6 rounded-2xl border-green-900 border-t-8 border-l-8 relative">
-        <h1 class="text-5xl font-bold text-white">Welcome<br>to Susberg</h1>
-        <div class="text-right mt-1 h-9 relative">
-            <span>Pop:</span>
-            <span class="inline-block w-12 text-center line-through text-xl">12,150</span>
+    <div class="absolute -right-[20px] -top-[70px] w-[120px] h-[70px] overflow-hidden">
+        <img src="images/death.png" class="w-full h-auto" alt="The entity of Death looking over the background">
+    </div>
 
-            <div class="inline-block w-12 text-center line-through text-lg absolute right-4 top-5 -rotate-6">9300</div>
+    <div class="absolute right-[60px] -top-[60px] w-[140px] h-[60px] overflow-hidden">
+        <img src="images/clown.png" class="w-full h-auto" alt="A mad clown peaking over the background">
+    </div>
 
-            <div class="inline-block w-12 text-center line-through text-sm absolute -right-2 top-9 -rotate-[18deg]">7100</div>
+    <div class="absolute right-[150px] -top-[60px] w-[140px] h-[60px] overflow-hidden">
+        <img src="images/yeti.png" class="w-full h-auto" alt="A cold yeti looming over the background">
+    </div>
 
-
-            <div class="inline-block w-12 text-center text-lg absolute -right-8 top-9 scale-50 -rotate-[21deg]">5700</div>
-        </div>
-
-
-        <div class="left-full top-1/3 -mt-3 absolute underline text-4xl ml-[60px] text-left skew-y-6">
-            <a class="inline-block text-teal-400 hover:text-teal-200 mb-4" href="welcome-to-susberg.pcio">Download&nbsp;Game</a>
-            <a target="_blank" class="inline-block text-teal-400 hover:text-teal-200" href="https://playingcards.io/game/standard-deck">PlayingCards.io</a>
-        </div>
-
+    <div class="absolute right-[240px] -top-[70px] w-[140px] h-[70px] overflow-hidden">
+        <img src="images/lion.png" class="w-full h-auto" alt="A sad party lion peaking over the background;">
     </div>
 
 
-</div>
+
+
+    <div class="text-xl md:text-2xl lg:text-4xl flex justify-center gap-4 md:gap-8 mb-[20px] items-center">
+        <a class="inline-block px-8 py-4 border border-teal-400 rounded-xl inline-block hover:text-teal-200 text-teal-400 hover:bg-cyan-950 mb-4" aria-label="Download the .pcio game file" href="welcome-to-susberg.pcio">Download&nbsp;Game</a>
+        <a target="_blank" class="inline-block px-8 py-4 border border-teal-400 rounded-xl inline-block text-teal-400 hover:bg-cyan-950 mb-4" aria-label="Play the game file at Playingcards.io" href="https://playingcards.io/game/standard-deck">PlayingCards.io</a>
+    </div>
 
 
 
 
 
 
-
-
-<div class="mb-8 mx-auto w-2/3">
-    <iframe class="youtube-video" src="https://www.youtube.com/embed/WS3Lkc6Gzlk?si=LnfHz-Ztx1v3QD2a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+    <div class="mb-8 mx-auto 2-full md:w-3/4 border border-teal-400 rounded-xl overflow-hidden">
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/WS3Lkc6Gzlk?si=LnfHz-Ztx1v3QD2a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 
 
 
-<div class="flex flex-row flex-nowrap items-center gap-12 justify-around mx-12">
-    <p class="flex-1 flex-grow text-2xl">The town of Susberg is under constant threat from the supernatural, but the citizens are oblivious to the danger. A group of young teens must defend their home from monsters that plot to destroy it.</p>
-    <p class="flex-1 flex-grow text-2xl">Welcome to Susberg is a 2 to 4 player cooperative deck-building game where players assume the roles of an Athlete, Artist, Musician, or Inventor to thwart a variety of enemies.</p>
-</div>
+    <div class="flex flex-row flex-nowrap items-top gap-6 md:gap-24 justify-between md:mx-12">
+        <p class="flex-grow w-full text-2xl text-center">The strange, and supernatural plot from the shadows of the quaint town of Susberg. A group of young teens armed with their wits and wicked loot, must protect their home.</p>
+        <ul class="flex-0 flex-shrink text-base md:text-xl w-[200px] md:w-[250px] list-[circle]">
+            <li>2-4 players</li>
+            <li>30-45 minutes</li>
+            <li>Deck-building</li>
+            <li>Cooperative</li>
+        </ul>
+    </div>
+
+    <!--
+    <div class="flex flex-row flex-wrap md:flex-nowrap items-center gap-12 justify-around mx-12">
+        <p class="md:flex-1 flex-grow text-2xl w-full md:w-1/2">The town of Susberg is under constant threat from the supernatural, but the citizens are oblivious to the danger. A group of young teens must defend their home from monsters that plot to destroy it.</p>
+        <p class="md:flex-1 flex-grow text-2xl w-full md:w-1/2">Welcome to Susberg is a 2 to 4 player cooperative deck-building game where players assume the roles of an Athlete, Artist, Musician, or Inventor to thwart a variety of enemies.</p>
+    </div>
+    -->
 
 
-<div
-    x-init=""
-    x-data="{
-        test: 'yo',
-        changePage: function(key) {
-            let sets = ['rules','Enemy','R','A','I','M'];
-            for (var i in sets) {
-                let set = sets[i];
-                document.getElementById(set).classList.add('hidden');
+    <div
+        x-init=""
+        x-data="{
+            test: 'yo',
+            changePage: function(key) {
+                let sets = ['rules','Enemy','R','A','I','M'];
+                for (var i in sets) {
+                    let set = sets[i];
+                    document.getElementById(set).classList.add('hidden');
 
-                document.getElementById('link-'+set).classList.remove('border-green-700');
-                document.getElementById('link-'+set).classList.remove('text-green-700');
-                document.getElementById('link-'+set).classList.add('border-teal-400');
+                    document.getElementById('link-'+set).classList.remove('text-teal-200');
+                    document.getElementById('link-'+set).classList.remove('border-b-black');
+                    document.getElementById('link-'+set).classList.remove('border');
+
+                    document.getElementById('link-'+set).classList.add('hover:text-teal-200');
+                    document.getElementById('link-'+set).classList.add('hover:bg-cyan-950');
+
+                    document.getElementById('link-'+set).classList.add('border-teal-400');
+                    document.getElementById('link-'+set).classList.add('border-teal-400');
+                    document.getElementById('link-'+set).classList.add('border-b');
+                }
+
+
+                document.getElementById(key).classList.remove('hidden');
+
+                document.getElementById('link-'+key).classList.remove('hover:text-teal-200');
+                document.getElementById('link-'+key).classList.remove('hover:bg-cyan-950');
+
+                document.getElementById('link-'+key).classList.add('text-teal-200');
+                document.getElementById('link-'+key).classList.add('border-teal-400');
+                document.getElementById('link-'+key).classList.add('border-b-black');
+                document.getElementById('link-'+key).classList.add('border');
+
             }
+        }"
+        class="mt-9 flex justify-around text-center text-sm md:text-2xl text-teal-400 sticky z-20 top-0 bg-black pt-4"
+    >
+        <a id="link-rules" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border border-b-black text-teal-200 border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('rules')">Rules</a>
+
+        <a id="link-Enemy" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('Enemy')">Enemies</a>
+
+        <a id="link-R" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('R')">Artist</a>
+
+        <a id="link-A" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('A')">Athlete</a>
+
+        <a id="link-I" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('I')">Inventor</a>
+
+        <a id="link-M" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('M')">Musician</a>
+    </div>
 
 
-            document.getElementById(key).classList.remove('hidden');
+    <div id="rules" class="px-[20px]">
+        <h1 class="text-5xl mt-8">Goal</h1>
+        <p class="mb-4">Players must defeat all enemies in the enemy deck without being defeated to win the game.</p>
 
-            document.getElementById('link-'+key).classList.remove('border-teal-400');
-            document.getElementById('link-'+key).classList.add('border-green-700');
-            document.getElementById('link-'+key).classList.add('text-green-700');
+        <h1 class="text-5xl mt-8">Contents</h1>
+        <p class="mb-4">(Section for use in printed rules)</p>
 
-        }
-    }"
-    class="mt-9 flex justify-around text-center text-2xl text-teal-400 sticky z-20 top-0 bg-sky-950"
->
-    <a id="link-rules" class="cursor-pointer py-2 flex-1 flex-grow border-b-2 text-green-700 border-green-700" @click="changePage('rules')">Rules</a>
-    <a id="link-Enemy" class="cursor-pointer py-2 flex-1 flex-grow border-b-2 border-teal-400" @click="changePage('Enemy')">Enemies</a>
-    <a id="link-R" class="cursor-pointer py-2 flex-1 flex-grow border-b-2 border-teal-400" @click="changePage('R')">Artist</a>
-    <a id="link-A" class="cursor-pointer py-2 flex-1 flex-grow border-b-2 border-teal-400" @click="changePage('A')">Athlete</a>
-    <a id="link-I" class="cursor-pointer py-2 flex-1 flex-grow border-b-2 border-teal-400" @click="changePage('I')">Inventor</a>
-    <a id="link-M" class="cursor-pointer py-2 flex-1 flex-grow border-b-2 border-teal-400" @click="changePage('M')">Musician</a>
-</div>
+        <h1 class="text-5xl mt-8">Getting Started</h1>
 
+        <h2 class="text-3xl mt-6">Player Cards</h2>
+        <p class="mb-4">Each player chooses one of the four characters, and gathers their cards. They take the 10 starting cards (cards with no Luck cost at the top right of the card) to make up their deck and the remainder becomes their Loot pile. Draw and spread out three cards from the Loot deck. The player can purchase these cards over the course of the game.</p>
 
-<div id="rules">
-    <h1 class="text-5xl mt-8">Goal</h1>
-    <p class="mb-4">Players must defeat all enemies in the enemy deck without being defeated to win the game.</p>
+        <h2 class="text-3xl mt-6">Enemy Deck</h2>
+        <p class="mb-4">Separate enemies into four piles according to their Level (seen at the bottom right of the card), and shuffle those piles. Using the chart below, build the enemy deck. Starting with the top row, take that number of cards from the corresponding card pile, and either start the deck, or add it on top of the deck.</p>
 
-    <h1 class="text-5xl mt-8">Contents</h1>
-    <p class="mb-4">(Section for use in printed rules)</p>
+        <table class="border-collapse border border-slate-500 mb-4">
+            <tr>
+                <td class="p-2 border border-slate-500"></td>
+                <td class="p-2 border border-slate-500">2 Players</td>
+                <td class="p-2 border border-slate-500">3 Players</td>
+                <td class="p-2 border border-slate-500">4 Players</td>
+            </tr>
+            <tr>
+                <td class="p-2 border border-slate-500">Lv.3</td>
+                <td class="p-2 border border-slate-500">2</td>
+                <td class="p-2 border border-slate-500">2</td>
+                <td class="p-2 border border-slate-500">2</td>
+            </tr>
+            <tr>
+                <td class="p-2 border border-slate-500">Lv.4</td>
+                <td class="p-2 border border-slate-500">1</td>
+                <td class="p-2 border border-slate-500">1</td>
+                <td class="p-2 border border-slate-500">1</td>
+            </tr>
+            <tr>
+                <td class="p-2 border border-slate-500">Lv.3</td>
+                <td class="p-2 border border-slate-500">5</td>
+                <td class="p-2 border border-slate-500">6</td>
+                <td class="p-2 border border-slate-500">7</td>
+            </tr>
+            <tr>
+                <td class="p-2 border border-slate-500">Lv.2</td>
+                <td class="p-2 border border-slate-500">6</td>
+                <td class="p-2 border border-slate-500">7</td>
+                <td class="p-2 border border-slate-500">8</td>
+            </tr>
+            <tr>
+                <td class="p-2 border border-slate-500">Lv.1</td>
+                <td class="p-2 border border-slate-500">5</td>
+                <td class="p-2 border border-slate-500">6</td>
+                <td class="p-2 border border-slate-500">7</td>
+            </tr>
+        </table>
 
-    <h1 class="text-5xl mt-8">Getting Started</h1>
+        <h1 class="text-5xl mt-8">Playing the Game</h1>
+        <p class="mb-4">Each turn has 3 phases. Attack, Defend, Loot.</p>
 
-    <h2 class="text-3xl mt-6">Player Cards</h2>
-    <p class="mb-4">Each player chooses one of the four characters, and gathers their cards. They take the 10 starting cards (cards with no Luck cost at the top right of the card) to make up their deck and the remainder becomes their Loot pile. Draw and spread out three cards from the Loot deck. The player can purchase these cards over the course of the game.</p>
+        <h2 class="text-3xl mt-6">Start of Turn</h2>
+        <p class="mb-4">At the start of the turn players draw 5 cards. If there are no cards to draw, shuffle the discard pile to make a new deck, and continue drawing from that. These cards can be played face up so that all players can see them, and can plan their turns together.</p>
+        <p class="mb-4">Player&rsquo;s draw Loot to fill any empty loot piles. If the piles are already full, they may draw another Loot card.</p>
+        <p class="mb-4">Draw enemies to fill the board. A 2-Player game has 3 enemies on the board. A 3-player game has 4. A 4-player game has 5.</p>
 
-    <h2 class="text-3xl mt-6">Enemy Deck</h2>
-    <p class="mb-4">Separate enemies into four piles according to their Level (seen at the bottom right of the card), and shuffle those piles. Using the chart below, build the enemy deck. Starting with the top row, take that number of cards from the corresponding card pile, and either start the deck, or add it on top of the deck.</p>
+        <h2 class="text-3xl mt-6">Attack</h2>
+        <p class="mb-4">Each enemy has a number that represents their Health. This is at the top right of their cards. Players can use and combine Power (<img class="inline-block w-10 h-auto" src="stats/power.png">) on enemies to defeat them. If the amount of Power used is equal to or greater than that enemy&rsquo;s Health, they are defeated and set aside for later in the turn.</p>
+        <p class="mb-4">Power sets cannot be split between targets. For example, if a card has 2 Power grouped together (<img class="inline-block w-14 h-auto" src="stats/power2.png">), it must be used on one target. However, one card may have more than one Power set. Each set can be used on a different target</p>
 
-    <table class="border-collapse border border-slate-500 mb-4">
-        <tr>
-            <td class="p-2 border border-slate-500"></td>
-            <td class="p-2 border border-slate-500">2 Players</td>
-            <td class="p-2 border border-slate-500">3 Players</td>
-            <td class="p-2 border border-slate-500">4 Players</td>
-        </tr>
-        <tr>
-            <td class="p-2 border border-slate-500">Lv.3</td>
-            <td class="p-2 border border-slate-500">2</td>
-            <td class="p-2 border border-slate-500">2</td>
-            <td class="p-2 border border-slate-500">2</td>
-        </tr>
-        <tr>
-            <td class="p-2 border border-slate-500">Lv.4</td>
-            <td class="p-2 border border-slate-500">1</td>
-            <td class="p-2 border border-slate-500">1</td>
-            <td class="p-2 border border-slate-500">1</td>
-        </tr>
-        <tr>
-            <td class="p-2 border border-slate-500">Lv.3</td>
-            <td class="p-2 border border-slate-500">5</td>
-            <td class="p-2 border border-slate-500">6</td>
-            <td class="p-2 border border-slate-500">7</td>
-        </tr>
-        <tr>
-            <td class="p-2 border border-slate-500">Lv.2</td>
-            <td class="p-2 border border-slate-500">6</td>
-            <td class="p-2 border border-slate-500">7</td>
-            <td class="p-2 border border-slate-500">8</td>
-        </tr>
-        <tr>
-            <td class="p-2 border border-slate-500">Lv.1</td>
-            <td class="p-2 border border-slate-500">5</td>
-            <td class="p-2 border border-slate-500">6</td>
-            <td class="p-2 border border-slate-500">7</td>
-        </tr>
-    </table>
+        <h2 class="text-3xl mt-6">Defend</h2>
+        <p class="mb-4">Each surviving enemy will now attack each player. Each enemy has their own amount of Power seen at the top left of their card. Each player must play Block (<img class="inline-block w-6 h-auto" src="stats/block.png">) equal to or greater than an enemy&rsquo;s Power to not take damage. Block cannot be shared between players.</p>
+        <p class="mb-4">Block sets cannot be split between enemies. For example, if a card has 2 Block grouped together (<img class="inline-block w-10 h-auto" src="stats/block2.png">), it must be used to defend from one enemy. However, one card may have more than one Block set. Each set can be used on a different target</p>
+        <p class="mb-4">If a player is unable to entirely block an enemy, they take 1 damage. Once a player has taken 5 damage, they are out of the game.</p>
 
-    <h1 class="text-5xl mt-8">Playing the Game</h1>
-    <p class="mb-4">Each turn has 3 phases. Attack, Defend, Loot.</p>
+        <h2 class="text-3xl mt-6">Loot</h2>
+        <p class="mb-4">Players may now spend their Luck (<img class="inline-block w-9 h-auto" src="stats/luck.png">) to buy Loot. In addition to Luck given by a player&rsquo;s cards, each defeated enemy gives each player 1 Luck. Player's may buy Loot from their piles for the amount of Luck seen at the top left of those cards.</p>
+        <p class="mb-4">Luck sets cannot be split between loot. For example, if a card has 2 Luck grouped together (<img class="inline-block w-14 h-auto" src="stats/luck2.png">), it must be used to purchase one loot. However, one card may have more than one Luck set. Each set can be used on a different target</p>
+        <p class="mb-4">A player may also spend 1 Luck to draw a new Loot card, and place it on an empty Loot pile, or if all piles have a card, on top of a pile.</p>
 
-    <h2 class="text-3xl mt-6">Start of Turn</h2>
-    <p class="mb-4">At the start of the turn players draw 5 cards. If there are no cards to draw, shuffle the discard pile to make a new deck, and continue drawing from that. These cards can be played face up so that all players can see them, and can plan their turns together.</p>
-    <p class="mb-4">Player&rsquo;s draw Loot to fill any empty loot piles. If the piles are already full, they may draw another Loot card.</p>
-    <p class="mb-4">Draw enemies to fill the board. A 2-Player game has 3 enemies on the board. A 3-player game has 4. A 4-player game has 5.</p>
-
-    <h2 class="text-3xl mt-6">Attack</h2>
-    <p class="mb-4">Each enemy has a number that represents their Health. This is at the top right of their cards. Players can use and combine Power (<img class="inline-block w-10 h-auto" src="stats/power.png">) on enemies to defeat them. If the amount of Power used is equal to or greater than that enemy&rsquo;s Health, they are defeated and set aside for later in the turn.</p>
-    <p class="mb-4">Power sets cannot be split between targets. For example, if a card has 2 Power grouped together (<img class="inline-block w-14 h-auto" src="stats/power2.png">), it must be used on one target. However, one card may have more than one Power set. Each set can be used on a different target</p>
-
-    <h2 class="text-3xl mt-6">Defend</h2>
-    <p class="mb-4">Each surviving enemy will now attack each player. Each enemy has their own amount of Power seen at the top left of their card. Each player must play Block (<img class="inline-block w-6 h-auto" src="stats/block.png">) equal to or greater than an enemy&rsquo;s Power to not take damage. Block cannot be shared between players.</p>
-    <p class="mb-4">Block sets cannot be split between enemies. For example, if a card has 2 Block grouped together (<img class="inline-block w-10 h-auto" src="stats/block2.png">), it must be used to defend from one enemy. However, one card may have more than one Block set. Each set can be used on a different target</p>
-    <p class="mb-4">If a player is unable to entirely block an enemy, they take 1 damage. Once a player has taken 5 damage, they are out of the game.</p>
-
-    <h2 class="text-3xl mt-6">Loot</h2>
-    <p class="mb-4">Players may now spend their Luck (<img class="inline-block w-9 h-auto" src="stats/luck.png">) to buy Loot. In addition to Luck given by a player&rsquo;s cards, each defeated enemy gives each player 1 Luck. Player's may buy Loot from their piles for the amount of Luck seen at the top left of those cards.</p>
-    <p class="mb-4">Luck sets cannot be split between loot. For example, if a card has 2 Luck grouped together (<img class="inline-block w-14 h-auto" src="stats/luck2.png">), it must be used to purchase one loot. However, one card may have more than one Luck set. Each set can be used on a different target</p>
-    <p class="mb-4">A player may also spend 1 Luck to draw a new Loot card, and place it on an empty Loot pile, or if all piles have a card, on top of a pile.</p>
-
-    <h2 class="text-3xl mt-6">End of Turn</h2>
-    <p class="mb-4">At the end of the turn, each player returns their cards to their discard pile. Defeated enemies are put into the defeated enemies pile as well.</p>
-</div>
+        <h2 class="text-3xl mt-6">End of Turn</h2>
+        <p class="mb-4">At the end of the turn, each player returns their cards to their discard pile. Defeated enemies are put into the defeated enemies pile as well.</p>
+    </div>
 
     <div x-data="{ sets: ['Enemy','R','A','I','M'] }">
         <template x-for="(set) in sets">
-            <div :id="set" class="hidden py-12">
+            <div :id="set" class="hidden py-12" class="px-[20px]">
 
                 <div x-data="{
         baseUrl: 'https://raw.githubusercontent.com/rickwiltsie/welcome-to-susberg/main',
@@ -211,7 +240,7 @@
 
                     <ul class="flex flex-wrap">
                         <template x-for="(card) in cards">
-                            <li class="w-1/4 p-2 relative">
+                            <li class="w-1/3 md:w-1/4 p-2 relative">
                                 <img :src="'cards/'+card" class="rounded rounded-[13px] overflow-hidden">
                                 <div class="count absolute right-0 -bottom-1 text-white text-3xl font-black" x-text="function() {
                                     if (card.split('_')[0] == 'Enemy') { return ''; }
@@ -238,8 +267,23 @@
 
 
 
+    <div class="absolute left-[280px] bottom-0 w-[120px] h-[70px] overflow-hidden">
+        <img src="images/death.png" class="w-full h-auto" alt="The entity of Death looking over the background">
+    </div>
+
+    <div class="absolute left-[180px] bottom-0 w-[140px] h-[60px] overflow-hidden">
+        <img src="images/clown.png" class="w-full h-auto" alt="A mad clown peaking over the background">
+    </div>
+
+    <div class="absolute left-[90px] bottom-0 w-[140px] h-[60px] overflow-hidden">
+        <img src="images/yeti.png" class="w-full h-auto" alt="A cold yeti looming over the background">
+    </div>
+
+    <div class="absolute left-0 bottom-0 w-[140px] h-[70px] overflow-hidden">
+        <img src="images/lion.png" class="w-full h-auto" alt="A sad party lion peaking over the background;">
+    </div>
 
 </div>
-</div>
+
 </body>
 </html>
