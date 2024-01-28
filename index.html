@@ -118,7 +118,7 @@
 
             }
         }"
-        class="mt-9 flex justify-around text-center text-xs sm:text-lg md:text-2xl text-teal-400 sticky z-20 top-0 bg-black pt-4 -ml-[20px] -mr-[20px]"
+        class="mt-9 flex justify-around text-center text-xs sm:text-lg md:text-2xl text-teal-400 sticky z-20 top-0 bg-black pt-4 -ml-[10px] -mr-[10px]"
     >
         <a id="link-rules" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border border-b-black text-teal-200 border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('rules')">Rules</a>
 
@@ -198,16 +198,16 @@
 
         <h2 class="text-3xl mt-6">Attack</h2>
         <p class="mb-4">Each enemy has a number that represents their Health. This is at the top right of their cards. Players can use and combine Power (<img class="inline-block w-10 h-auto" src="stats/power.png">) on enemies to defeat them. If the amount of Power used is equal to or greater than that enemy&rsquo;s Health, they are defeated and set aside for later in the turn.</p>
-        <p class="mb-4">Power sets cannot be split between targets. For example, if a card has 2 Power grouped together (<img class="inline-block w-14 h-auto" src="stats/power2.png">), it must be used on one target. However, one card may have more than one Power set. Each set can be used on a different target</p>
+        <p class="mb-4">Power sets cannot be split between targets. For example, if a card has 2 Power grouped together (<img class="inline-block w-14 h-auto" src="stats/power2.png">), it must be used on one target. However, one card may have more than one Power set. Each set can be used on a different target.</p>
 
         <h2 class="text-3xl mt-6">Defend</h2>
         <p class="mb-4">Each surviving enemy will now attack each player. Each enemy has their own amount of Power seen at the top left of their card. Each player must play Block (<img class="inline-block w-6 h-auto" src="stats/block.png">) equal to or greater than an enemy&rsquo;s Power to not take damage. Block cannot be shared between players.</p>
-        <p class="mb-4">Block sets cannot be split between enemies. For example, if a card has 2 Block grouped together (<img class="inline-block w-10 h-auto" src="stats/block2.png">), it must be used to defend from one enemy. However, one card may have more than one Block set. Each set can be used on a different target</p>
+        <p class="mb-4">Block sets cannot be split between enemies. For example, if a card has 2 Block grouped together (<img class="inline-block w-10 h-auto" src="stats/block2.png">), it must be used to defend from one enemy. However, one card may have more than one Block set. Each set can be used on a different target.</p>
         <p class="mb-4">If a player is unable to entirely block an enemy, they take 1 damage. Once a player has taken 5 damage, they are out of the game.</p>
 
         <h2 class="text-3xl mt-6">Loot</h2>
         <p class="mb-4">Players may now spend their Luck (<img class="inline-block w-9 h-auto" src="stats/luck.png">) to buy Loot. In addition to Luck given by a player&rsquo;s cards, each defeated enemy gives each player 1 Luck. Player's may buy Loot from their piles for the amount of Luck seen at the top left of those cards.</p>
-        <p class="mb-4">Luck sets cannot be split between loot. For example, if a card has 2 Luck grouped together (<img class="inline-block w-14 h-auto" src="stats/luck2.png">), it must be used to purchase one loot. However, one card may have more than one Luck set. Each set can be used on a different target</p>
+        <p class="mb-4">Luck sets cannot be split between loot. For example, if a card has 2 Luck grouped together (<img class="inline-block w-14 h-auto" src="stats/luck2.png">), it must be used to purchase one loot. However, one card may have more than one Luck set. Each set can be used on a different target.</p>
         <p class="mb-4">A player may also spend 1 Luck to draw a new Loot card, and place it on an empty Loot pile, or if all piles have a card, on top of a pile.</p>
 
         <h2 class="text-3xl mt-6">End of Turn</h2>
