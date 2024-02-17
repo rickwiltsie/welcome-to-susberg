@@ -5,9 +5,109 @@ import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 import * as JSZipUtils from 'jszip-utils';
 
-window.onload = (event) => {
-    document.getElementById('test-button').addEventListener("click", testButton);
-};
+
+
+/* Start Authorization */
+
+const CLIENT_ID = process.env.CLIENT_ID;
+const API_KEY = process.env.API_KEY;
+
+// Discovery doc URL for APIs used by the quickstart
+const DISCOVERY_DOC = 'https://sheets.googleapis.com/$discovery/rest?version=v4';
+
+// Authorization scopes required by the API; multiple scopes can be
+// included, separated by spaces.
+const SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+
+let tokenClient;
+let gapiInited = false;
+let gisInited = false;
+
+document.getElementById('authorize_button').style.visibility = 'hidden';
+document.getElementById('signout_button').style.visibility = 'hidden';
+
+/**
+ * Callback after api.js is loaded.
+ */
+window.gapiLoaded = function() {
+    gapi.load('client', initializeGapiClient);
+}
+
+/**
+ * Callback after the API client is loaded. Loads the
+ * discovery doc to initialize the API.
+ */
+async function initializeGapiClient() {
+    await gapi.client.init({
+        apiKey: API_KEY,
+        discoveryDocs: [DISCOVERY_DOC],
+    });
+    gapiInited = true;
+    maybeEnableButtons();
+}
+
+/**
+ * Callback after Google Identity Services are loaded.
+ */
+window.gisLoaded = function() {
+    tokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: CLIENT_ID,
+        scope: SCOPES,
+        callback: '', // defined later
+    });
+    gisInited = true;
+    maybeEnableButtons();
+}
+
+/**
+ * Enables user interaction after all libraries are loaded.
+ */
+function maybeEnableButtons() {
+    if (gapiInited && gisInited) {
+        document.getElementById('authorize_button').style.visibility = 'visible';
+    }
+}
+
+/**
+ *  Sign in the user upon button click.
+ */
+window.handleAuthClick = function() {
+    tokenClient.callback = async (resp) => {
+        if (resp.error !== undefined) {
+            throw (resp);
+        }
+        document.getElementById('signout_button').style.visibility = 'visible';
+        document.getElementById('authorize_button').innerText = 'Refresh';
+        await startApp();
+    };
+
+    if (gapi.client.getToken() === null) {
+        // Prompt the user to select a Google Account and ask for consent to share their data
+        // when establishing a new session.
+        tokenClient.requestAccessToken({prompt: 'consent'});
+    } else {
+        // Skip display of account chooser and consent dialog for an existing session.
+        tokenClient.requestAccessToken({prompt: ''});
+    }
+}
+
+/**
+ *  Sign out the user upon button click.
+ */
+window.handleSignoutClick = function() {
+    const token = gapi.client.getToken();
+    if (token !== null) {
+        google.accounts.oauth2.revoke(token.access_token);
+        gapi.client.setToken('');
+        document.getElementById('content').innerText = '';
+        document.getElementById('authorize_button').innerText = 'Authorize';
+        document.getElementById('signout_button').style.visibility = 'hidden';
+    }
+}
+
+
+
+/* Start Application */
 
 var cards = [];
 var enemies = [];
@@ -19,33 +119,14 @@ let styles = {
     i: ['inventor','pattern-checks-md'],
 }
 
-// 1. Load the JavaScript client library.
-gapi.load('client', start);
-
-function start()
+async function startApp()
 {
-  // 2. Initialize the JavaScript client library.
-  gapi.client.init({
-    'apiKey': process.env.API_KEY,
-    'clientId': process.env.CLIENT_ID,
-    'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-    'scope': 'https://www.googleapis.com/auth/spreadsheets.readonly',
-  }).then(function() {
-
-
 
     // 3. Initialize and make the API request.
-    return gapi.client.sheets.spreadsheets.get({
-      'spreadsheetId': process.env.SPREADSHEET_ID,
-      'includeGridData': true
+    let response = await gapi.client.sheets.spreadsheets.get({
+        'spreadsheetId': process.env.SPREADSHEET_ID,
+        'includeGridData': true
     });
-
-
-
-  }).then(function(response) {
-
-
-    console.log(response);
 
 
     setCardData(response.result)
@@ -54,33 +135,29 @@ function start()
 
     showEnemies();
 
-  }, function(reason) {
-    console.log(reason);
-    console.log('Error: ' + reason.result.error.message);
-  });
 };
 
 function setCardData(spreadsheet)
 {
 
-  for(var iSheet in spreadsheet.sheets) {
-    var sheet = spreadsheet.sheets[iSheet];
-    var sheetName = sheet.properties.title;
+    for(var iSheet in spreadsheet.sheets) {
+        var sheet = spreadsheet.sheets[iSheet];
+        var sheetName = sheet.properties.title;
 
 
-      console.log(sheet);
-      console.log(sheetName);
+        console.log(sheet);
+        console.log(sheetName);
 
-    // skip the template sheet
-    if (sheetName == 'LatestVersion') {
-        storeCards(sheet.data[0].rowData);
+        // skip the template sheet
+        if (sheetName == 'LatestVersion') {
+            storeCards(sheet.data[0].rowData);
 
-    } else if (sheetName == 'v1-enemies') {
-        storeEnemies(sheet.data[0].rowData);
+        } else if (sheetName == 'v1-enemies') {
+            storeEnemies(sheet.data[0].rowData);
+        }
+
+
     }
-
-
-  }
 }
 
 
@@ -447,14 +524,14 @@ function testButton() {
         fileNames.push(fileName);
 
         a2pClient.chromeHtmlToImage(cardElement.outerHTML, config)
-        .then(function (result) {
+            .then(function (result) {
 
-                zip.file(fileName, urlToPromise(result.FileUrl), {binary: true})
+                    zip.file(fileName, urlToPromise(result.FileUrl), {binary: true})
 
-            }, function (rejected) {
-                console.log(rejected); //an error occurred
-            }
-        ).then(function() {
+                }, function (rejected) {
+                    console.log(rejected); //an error occurred
+                }
+            ).then(function() {
             checkSave();
         });
         cardElement.classList.remove('api2pdf');
