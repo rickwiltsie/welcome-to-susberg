@@ -119,6 +119,10 @@ let styles = {
     i: ['inventor','pattern-checks-md'],
 }
 
+window.onload = (event) => {
+    document.getElementById('save-images-button').addEventListener("click", saveImagesButton);
+};
+
 async function startApp()
 {
 
@@ -455,7 +459,9 @@ let cardsLoaded = 0;
 let zip = new JSZip();
 let fileNames = [];
 
-function testButton() {
+function saveImagesButton() {
+    console.log('start save');
+
     cardCount = 0;
     cardsLoaded = 0;
     zip = new JSZip();
@@ -466,7 +472,7 @@ function testButton() {
         ...document.querySelectorAll('#enemies-grid li:not(.clone-source) .card')
     ];
 
-    //cards = cards.slice(0, 3);
+    cards = cards.slice(0, 3);
 
     cardCount = cards.length;
 
@@ -474,6 +480,8 @@ function testButton() {
     for (let i in cards) {
         let cardElement = cards[i];
 
+        /* change scaleFactor to match print size */
+        let scaleFactor = 1;
 
         let config = {
             filename: 'test.png',
@@ -483,8 +491,8 @@ function testButton() {
                 puppeteerWaitForValue: "Load",
                 fullPage: false,
                 viewPortOptions: {
-                    width: 240 * 3,
-                    height: 336 * 3,
+                    width: 240 * scaleFactor,
+                    height: 336 * scaleFactor,
                     deviceScaleFactor: 2
                 }
             }

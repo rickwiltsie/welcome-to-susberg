@@ -454,7 +454,9 @@ button {
     content: attr(level);
 }
 
+
+/* change scale() to match print size */
 .card.api2pdf {
-    transform: scale(3);
+    transform: scale(1);
     transform-origin: top left;
 }

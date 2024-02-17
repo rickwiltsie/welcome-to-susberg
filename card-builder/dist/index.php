@@ -3,19 +3,17 @@
 <head>
     <title>Sheets API Quickstart</title>
     <meta charset="utf-8" />
+
+    <?php include 'print.php'; ?>
 </head>
 <body>
-<p>Sheets API Quickstart</p>
 
 <!--Add buttons to initiate auth sequence and sign out-->
 <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+
 <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
 
-<pre id="content" style="white-space: pre-wrap;"></pre>
-
-<hr>
-
-<button id="test-button">TEST BUTTON</button>
+<button id="save-images-button">Save Images</button>
 
 <ul id="cards-grid" class="grid">
     <li class="clone-source">
