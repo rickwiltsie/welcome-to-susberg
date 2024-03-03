@@ -472,7 +472,7 @@ function saveImagesButton() {
         ...document.querySelectorAll('#enemies-grid li:not(.clone-source) .card')
     ];
 
-    cards = cards.slice(0, 3);
+    //cards = cards.slice(0, 3);
 
     cardCount = cards.length;
 

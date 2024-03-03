@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sheets API Quickstart</title>
+    <title>Card Builder</title>
     <meta charset="utf-8" />
 
     <?php include 'print.php'; ?>
@@ -93,34 +93,151 @@
 <h1>Test Design</h1>
 
 <ul class="grid">
+
+
+
+
+
     <li>
-
         <div class="wrapper" id="api-test">
-
-
-            <div class="card inventor pattern-zigzag-md">
-
+            <div class="card instruction athlete pattern-diagonal-stripes-md">
                 <?php include 'print.php'; ?>
-
-                <div cost="1"><div></div></div>
                 <div class="image"></div>
-                <div name="Home Run Hitter"></div>
+                <div name="Turn Overview"></div>
                 <div class="rules">
-
-                    <div>
+                    <div class="icon">
+                        <div stat="pwr">
+                            <span></span>
+                        </div>
+                        <div class="definition">
+                            <u>Attack Phase</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div class="definition">
+                            <div><u>Defense Phase</u><br>Defend from foes<br>using Block.</div>
+                        </div>
                         <div stat="blk">
-                            <span></span>
-                            <span></span>
                             <span></span>
                         </div>
                     </div>
-
-                    <div conjunction="and"></div>
-
-                    <div>
-                        <div stat="msc">
+                    <div class="icon">
+                        <div stat="lck">
                             <span></span>
+                        </div>
+                        <div class="definition">
+                            <div><u>Loot Phase</u><br>Spend Luck to<br>buy or draw a Loot.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction inventor pattern-checks-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
+                <div name="Turn Overview"></div>
+                <div class="rules">
+                    <div class="icon">
+                        <div stat="pwr">
                             <span></span>
+                        </div>
+                        <div class="definition">
+                            <u>Attack Phase</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div class="definition">
+                            <div><u>Defense Phase</u><br>Defend from foes<br>using Block.</div>
+                        </div>
+                        <div stat="blk">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div stat="lck">
+                            <span></span>
+                        </div>
+                        <div class="definition">
+                            <div><u>Loot Phase</u><br>Spend Luck to<br>buy or draw a Loot.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction musician pattern-zigzag-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
+                <div name="Turn Overview"></div>
+                <div class="rules">
+                    <div class="icon">
+                        <div stat="pwr">
+                            <span></span>
+                        </div>
+                        <div class="definition">
+                            <u>Attack Phase</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div class="definition">
+                            <div><u>Defense Phase</u><br>Defend from foes<br>using Block.</div>
+                        </div>
+                        <div stat="blk">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div stat="lck">
+                            <span></span>
+                        </div>
+                        <div class="definition">
+                            <div><u>Loot Phase</u><br>Spend Luck to<br>buy or draw a Loot.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction artist pattern-triangles-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
+                <div name="Turn Overview"></div>
+                <div class="rules">
+                    <div class="icon">
+                        <div stat="pwr">
+                            <span></span>
+                        </div>
+                        <div class="definition">
+                            <u>Attack Phase</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div class="definition">
+                            <div><u>Defense Phase</u><br>Defend from foes<br>using Block.</div>
+                        </div>
+                        <div stat="blk">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div stat="lck">
+                            <span></span>
+                        </div>
+                        <div class="definition">
+                            <div><u>Loot Phase</u><br>Spend Luck to<br>buy or draw a Loot.</div>
                         </div>
                     </div>
 
@@ -176,31 +293,6 @@
                 </div>
 
             </div>
-        </div>
-    </li>
-    <li>
-        <div class="card enemy pattern-vertical-stripes-md">
-
-            <?php include 'print.php'; ?>
-
-            <div power="3"><div></div></div>
-            <div health="3"><div></div></div>
-            <div class="image"></div>
-            <div name="Alien Scout"></div>
-
-            <div class="rules">
-
-                <div rule="Test">
-                    asdf
-                </div>
-
-            </div>
-
-
-            <div reward="Reward:">
-                asdf
-            </div>
-            <div level="3"></div>
         </div>
     </li>
 </ul>

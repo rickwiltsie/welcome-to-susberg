@@ -422,6 +422,50 @@ div[name]:after {
 
 
 
+
+.instruction .rules {
+    top: .8in;
+    height: 2.6in;
+    font-size: 16pt;
+    letter-spacing: -1.5pt;
+    line-height: 16pt;
+    text-align: center;
+}
+.instruction .image {
+    display: none !important;
+}
+.instruction div[name] {
+    position: absolute;
+    top: .4in;
+    height: .5in;
+}
+.instruction div.icon {
+    padding: 0;
+    position: relative;
+}
+.instruction div.icon div[stat] {
+    position: absolute;
+    top: 0;
+    width: .7in;
+    flex-shrink: 1;
+}
+.instruction div.icon:nth-child(2) div[stat] {
+    right: 0;
+}
+.instruction div.icon div.definition {
+    padding-left: .6in;
+}
+.instruction div.icon:nth-child(2) div.definition {
+    padding-left: 0;
+    padding-right: .6in;
+}
+
+
+
+
+
+
+
 button {
     margin: 20px;
     font-size: 32px;
@@ -455,8 +499,14 @@ button {
 }
 
 
+
+
+
+
+
 /* change scale() to match print size */
 .card.api2pdf {
     transform: scale(1);
     transform-origin: top left;
 }
+
