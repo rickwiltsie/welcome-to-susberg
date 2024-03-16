@@ -95,9 +95,47 @@
 <ul class="grid">
 
 
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction athlete pattern-diagonal-stripes-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
+                <div name="Athlete"></div>
+                <div class="rules">
+                    <div>
+                        <div class="explanation">
+                            <u>Trash</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation">
+                            <u>Attack Phase</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
 
-
-
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction athlete pattern-diagonal-stripes-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
+                <div class="rules tracker">
+                    <div>
+                        <div>
+                            <div health class="athlete-health"><div></div></div>
+                            <div health class="athlete-health""><div></div></div>
+                            <div health class="athlete-health""><div></div></div>
+                            <div health class="athlete-health"><div></div></div>
+                            <div health class="athlete-health"><div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
     <li>
         <div class="wrapper" id="api-test">
             <div class="card instruction athlete pattern-diagonal-stripes-md">
@@ -140,6 +178,47 @@
             <div class="card instruction inventor pattern-checks-md">
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
+                <div name="Athlete"></div>
+                <div class="rules">
+                    <div>
+                        <div class="explanation">
+                            <u>Trash</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation">
+                            <u>Attack Phase</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction inventor pattern-checks-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
+                <div class="rules tracker">
+                    <div>
+                        <div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction inventor pattern-checks-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
                 <div name="Turn Overview"></div>
                 <div class="rules">
                     <div class="icon">
@@ -170,8 +249,47 @@
                 </div>
             </div>
         </div>
-    </li>
+    </li><li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction musician pattern-zigzag-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
+                <div name="Athlete"></div>
+                <div class="rules">
+                    <div>
+                        <div class="explanation">
+                            <u>Trash</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation">
+                            <u>Attack Phase</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction musician pattern-zigzag-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
+                <div class="rules tracker">
+                    <div>
+                        <div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
     <li>
         <div class="wrapper" id="api-test">
             <div class="card instruction musician pattern-zigzag-md">
@@ -214,6 +332,47 @@
             <div class="card instruction artist pattern-triangles-md">
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
+                <div name="Athlete"></div>
+                <div class="rules">
+                    <div>
+                        <div class="explanation">
+                            <u>Trash</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation">
+                            <u>Attack Phase</u><br>Combine Power to defeat enemies.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction artist pattern-triangles-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
+                <div class="rules tracker">
+                    <div>
+                        <div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                            <div health=""><div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card instruction artist pattern-triangles-md">
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
                 <div name="Turn Overview"></div>
                 <div class="rules">
                     <div class="icon">
@@ -242,56 +401,6 @@
                     </div>
 
                 </div>
-            </div>
-        </div>
-    </li>
-
-    <li>
-        <div class="card musician pattern-checks-md export-test">
-
-            <?php include 'print.php'; ?>
-
-
-            <div cost="S"><div></div></div>
-            <div class="image"></div>
-            <div name="Home Run Hitter"></div>
-            <div class="rules">
-
-                <div>
-                    Spend a <span stat="pwr"><span></span><span></span></span> to do <span stat="pwr"><span></span></span> to all enemies.
-                </div>
-
-                <div conjunction="or"></div>
-
-                <div>
-                    When this is trashed, give all players <span stat="pwr"><span></span><span></span><span></span></span>.
-                </div>
-
-            </div>
-        </div>
-    </li>
-
-    <li>
-        <div class="card musician pattern-checks-md">
-
-            <?php include 'print.php'; ?>
-
-
-            <div cost="2"><div></div></div>
-            <div class="image"></div>
-            <div name="Home Run Hitter"></div>
-            <div class="rules">
-
-                <div>
-                    Spend a <span stat="blk"><span></span><span></span></span> to do <span stat="blk"><span></span></span> to all enemies.
-                </div>
-
-                <div conjunction="or"></div>
-
-                <div>
-                    When this is trashed, give all players <span stat="blk"><span></span><span></span><span></span></span>.
-                </div>
-
             </div>
         </div>
     </li>

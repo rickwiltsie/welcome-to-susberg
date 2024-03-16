@@ -67,4 +67,48 @@
         background-image: url(<?=$base64 ?>);
     }
 
+
+
+    <?php
+    $path = './stats/athlete-health.png';
+    $type = pathinfo($path, PATHINFO_EXTENSION);
+    $data = file_get_contents($path);
+    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+    ?>
+    .athlete div[health].athlete-health > div:before {
+        background-image: url(<?=$base64 ?>);
+    }
+
+
+    <?php
+    $path = './stats/inventor-health.png';
+    $type = pathinfo($path, PATHINFO_EXTENSION);
+    $data = file_get_contents($path);
+    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+    ?>
+    .inventor div[health] > div:before {
+        background-image: url(<?=$base64 ?>);
+    }
+
+
+    <?php
+    $path = './stats/musician-health.png';
+    $type = pathinfo($path, PATHINFO_EXTENSION);
+    $data = file_get_contents($path);
+    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+    ?>
+    .musician div[health] > div:before {
+        background-image: url(<?=$base64 ?>);
+    }
+
+    <?php
+    $path = './stats/artist-health.png';
+    $type = pathinfo($path, PATHINFO_EXTENSION);
+    $data = file_get_contents($path);
+    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+    ?>
+    .artist div[health] > div:before {
+        background-image: url(<?=$base64 ?>);
+    }
+
 </style>

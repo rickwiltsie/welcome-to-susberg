@@ -481,7 +481,7 @@ function saveImagesButton() {
         let cardElement = cards[i];
 
         /* change scaleFactor to match print size */
-        let scaleFactor = 1;
+        let scaleFactor = 2;
 
         let config = {
             filename: 'test.png',

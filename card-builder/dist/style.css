@@ -455,11 +455,48 @@ div[name]:after {
 .instruction div.icon div.definition {
     padding-left: .6in;
 }
+.instruction div.explanation {
+    font-size: 14pt;
+    text-align: left;
+    padding: 0 10pt 0 10pt;
+}
 .instruction div.icon:nth-child(2) div.definition {
     padding-left: 0;
     padding-right: .6in;
 }
 
+.instruction div.tracker {
+    top: 0;
+    height: 3.4in;
+    background-color: transparent;
+}
+.instruction div.tracker div[health] {
+    transform: scale(.7);
+}
+.instruction div.tracker div[health]:nth-of-type(1) {
+    right: 1.6in;
+    top: 0;
+}
+.instruction div.tracker div[health]:nth-of-type(2) {
+    right: .3in;
+    top: 0;
+}
+.instruction div.tracker div[health]:nth-of-type(3) {
+    right: .95in;
+    top: 1.2in;
+}
+.instruction div.tracker div[health]:nth-of-type(4) {
+    right: 1.6in;
+    top: 2.4in;
+}
+.instruction div.tracker div[health]:nth-of-type(5) {
+    right: .3in;
+    top: 2.4in;
+}
+
+.instruction .athlete div.tracker div[health] {
+
+}
 
 
 
@@ -506,7 +543,7 @@ button {
 
 /* change scale() to match print size */
 .card.api2pdf {
-    transform: scale(1);
+    transform: scale(2);
     transform-origin: top left;
 }
 
