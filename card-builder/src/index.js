@@ -120,7 +120,20 @@ let styles = {
 }
 
 window.onload = (event) => {
-    document.getElementById('save-images-button').addEventListener("click", saveImagesButton);
+
+
+    document.getElementById('save-images-button-digital').addEventListener("click",
+        function() {
+            saveImagesButton('digital');
+        }
+    );
+
+    
+    document.getElementById('save-images-button-print').addEventListener("click",
+        function() {
+            saveImagesButton('print');
+        }
+    );
 };
 
 async function startApp()
@@ -156,7 +169,7 @@ function setCardData(spreadsheet)
         if (sheetName == 'LatestVersion') {
             storeCards(sheet.data[0].rowData);
 
-        } else if (sheetName == 'v1-enemies') {
+        } else if (sheetName == 'enemies') {
             storeEnemies(sheet.data[0].rowData);
         }
 
@@ -293,7 +306,8 @@ function showCards()
         if (!card.conjunction && !card.rule2) {
             newCard.querySelector('div[conjunction]').remove();
         } else {
-            newCard.querySelector('div[conjunction]').setAttribute('conjunction', card.conjunction ?? '');
+            console.log(transformRules(card.conjunction));
+            newCard.querySelector('div[conjunction]').innerHTML = card.conjunction ? transformRules(card.conjunction) : '';
         }
 
         if (card.rule2) {
@@ -377,6 +391,10 @@ function transformRules(rules, isReward = false) {
 
     let stats = ['PWR', 'BLK', 'LCK', 'MSC'];
 
+    if (!rules) {
+        return rules;
+    }
+
     for (var i in stats) {
         let stat = stats[i];
 
@@ -420,6 +438,7 @@ function transformRules(rules, isReward = false) {
     }
 
     rules = rules.replaceAll('+', '<br>');
+    rules = rules.replaceAll('<=', '+');
 
 
     return rules;
@@ -459,7 +478,17 @@ let cardsLoaded = 0;
 let zip = new JSZip();
 let fileNames = [];
 
-function saveImagesButton() {
+function saveImagesButton(type = 'digital') {
+    console.log(type);
+    if (type.toLowerCase() == 'digital') {
+        saveImages(2);
+    } else if (type.toLowerCase() == 'print') {
+        saveImages(5);
+    }
+}
+
+function saveImages(scaleFactor) {
+
     console.log('start save');
 
     cardCount = 0;
@@ -469,19 +498,30 @@ function saveImagesButton() {
 
     let cards = [
         ...document.querySelectorAll('#cards-grid li:not(.clone-source) .card'),
-        ...document.querySelectorAll('#enemies-grid li:not(.clone-source) .card')
+        ...document.querySelectorAll('#enemies-grid li:not(.clone-source) .card'),
+        ...document.querySelectorAll('#extras-grid li:not(.clone-source) .card')
     ];
 
     //cards = cards.slice(0, 3);
 
     cardCount = cards.length;
+    let currentExtra = 1;
 
+
+    let namesOnly = [/*'hairspray', 'sunglasses'*/];
 
     for (let i in cards) {
         let cardElement = cards[i];
 
-        /* change scaleFactor to match print size */
-        let scaleFactor = 2;
+        if (namesOnly.length > 0) {
+            let cardNameEl = cardElement?.querySelector('*[name]');
+            let cardName = cardNameEl ? cardNameEl.getAttribute('name').toLowerCase() : null;
+
+            if (!namesOnly.includes(cardName)) {
+                cardCount--;
+                continue;
+            }
+        }
 
         let config = {
             filename: 'test.png',
@@ -499,10 +539,15 @@ function saveImagesButton() {
         };
 
         cardElement.classList.add('api2pdf');
+        cardElement.classList.add('scale-'+scaleFactor);
 
         let fileName = '';
 
-        if (cardElement.classList.contains('enemy')) {
+        if (cardElement.classList.contains('extra')) {
+            fileName = 'Extra_' + currentExtra + '.png';
+            currentExtra++;
+
+        } else if (cardElement.classList.contains('enemy')) {
             fileName = 'enemy';
             let key = 'Enemy'
             let level = cardElement.querySelector('*[level]')

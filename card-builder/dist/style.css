@@ -52,8 +52,9 @@ div[cost] > div:before {
     background-repeat: no-repeat;
 }
 div[cost]:before {
+    font-family: blacknorth;
     width: 1.2in;
-    top: .25in;
+    top: .35in;
     left: -.25in;
     text-align: center;
     position: absolute;
@@ -65,8 +66,9 @@ div[cost]:before {
     z-index: 1;
 }
 div[cost]:after {
+    font-family: blacknorth;
     width: 1.2in;
-    top: .25in;
+    top: .35in;
     left: -.25in;
     text-align: center;
     position: absolute;
@@ -124,8 +126,9 @@ div[power] > div:before {
     background-repeat: no-repeat;
 }
 div[power]:before {
+    font-family: blacknorth;
     width: 1.2in;
-    top: .05in;
+    top: .2in;
     left: -.25in;
     text-align: center;
     position: absolute;
@@ -137,8 +140,9 @@ div[power]:before {
     z-index: 1;
 }
 div[power]:after {
+    font-family: blacknorth;
     width: 1.2in;
-    top: .05in;
+    top: .2in;
     left: -.25in;
     text-align: center;
     position: absolute;
@@ -168,8 +172,9 @@ div[health] > div:before {
     background-repeat: no-repeat;
 }
 div[health]:before {
+    font-family: blacknorth;
     width: 1.2in;
-    top: .25in;
+    top: .4in;
     right: -.25in;
     text-align: center;
     position: absolute;
@@ -181,8 +186,9 @@ div[health]:before {
     z-index: 1;
 }
 div[health]:after {
+    font-family: blacknorth;
     width: 1.2in;
-    top: .25in;
+    top: .4in;
     right: -.25in;
     text-align: center;
     position: absolute;
@@ -192,6 +198,51 @@ div[health]:after {
     color: white;
     z-index: 2;
 }
+
+
+.tracker div[health]:before {
+    width: 1.2in;
+    top: .65in;
+    right: -.25in;
+    text-align: center;
+    position: absolute;
+    content: '✗';
+    font-size: 64pt;
+    font-weight: 1100;
+    color: black;
+    -webkit-text-stroke: 7pt black;
+    z-index: 1;
+}
+.tracker div[health]:after {
+    width: 1.2in;
+    top: .65in;
+    right: -.25in;
+    text-align: center;
+    position: absolute;
+    content: '✗';
+    font-size: 64pt;
+    font-weight: 1100;
+    color: #C80100;
+    z-index: 2;
+}
+
+.tracker div[health].music:before,
+.tracker div[health].music:after {
+    display: none;
+}
+
+
+.tracker div[energy]:before,
+.tracker div[energy]:after {
+    content: attr(energy) !important;
+    font-size: 24pt;
+    color: #fff;
+}
+.tracker div[health][energy] div:before {
+    height: .6in;
+    background-image: none !important;
+}
+
 
 
 .image {
@@ -223,29 +274,31 @@ div[name] {
     z-index: 1;
 }
 div[name]:before {
+    font-family: happylucky;
     position: absolute;
-    top: .05in;
+    top: -.1in;
     left: 0;
     right: 0;
     content: attr(name);
     width: 100%;
     color: black;
-    font-size: 24pt;
-    letter-spacing: -1.5pt;
+    font-size: 26pt;
+    letter-spacing: 1pt;
     line-height: 24pt;
     text-align: center;
     -webkit-text-stroke: 5pt black;
 }
 div[name]:after {
+    font-family: happylucky;
     position: absolute;
-    top: .05in;
+    top: -.1in;
     left: 0;
     right: 0;
     content: attr(name);
     width: 100%;
     color: rgba(230,230,230,1);
-    font-size: 24pt;
-    letter-spacing: -1.5pt;
+    font-size: 26pt;
+    letter-spacing: 1pt;
     line-height: 24pt;
     text-align: center;
 }
@@ -263,8 +316,8 @@ div[name]:after {
     justify-content: space-evenly;
 
     color: black;
-    font-size: 20pt;
-    letter-spacing: -1.5pt;
+    font-size: 16pt;
+    letter-spacing: -.5pt;
     line-height: 22pt;
     text-align: center;
 }
@@ -275,27 +328,38 @@ div[name]:after {
 .rules > div[conjunction] {
     padding: 0;
     text-align: center;
-    position: relative;
     font-size: 16pt;
+    max-width: 100px;
+    padding: 0;
+    display: flex;
+    gap: .1in;
+    min-width: 100%;
+    padding: 0 .15in;
+    word-break: keep-all;
+    flex-shrink: 0;
+    align-items: center;
 }
+.rules > div[conjunction] span {
+    flex-shrink: 0;
+}
+.rules > div[conjunction]:empty:after { display: none; }
 .rules > div[conjunction]:before {
     content: '';
-    position: absolute;
-    display: inline-block;
-    left: .45in;
-    right: .45in;
+    display: block;
     border-top: .025in solid black;
+    display: block;
+    flex-basis: 20px;
+    flex-grow: 10;
+    flex-shrink: 0;
 }
 .rules > div[conjunction]:after {
-    content: attr(conjunction);
-    position: absolute;
-    display: inline-block;
-    top: -11pt;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align:center;
-    padding-left: .05in;
-    padding-right: .05in;
+    content: '';
+    display: block;
+    border-top: .025in solid black;
+    display: block;
+    flex-basis: 20px;
+    flex-grow: 10;
+    flex-shrink: 0;
 }
 
 .athlete {
@@ -340,12 +404,29 @@ div[name]:after {
     color: rgba(0,125,150,1);
 }
 .artist .rules,
-.artist div[conjunction]:after,
+.artist div[conjunction]:before,
 .artist div[name] {
     background-color: rgba(200,225,250,1);
 }
 .artist .image {
     background-color: rgba(200,225,250,.7);
+}
+
+
+.blank .rules,
+.blank div[conjunction]:after,
+.blank div[name] {
+    background-color: rgba(225,225,225,1);
+}
+.blank div[name] {
+    top: .2in !important;
+    height: .4in !important;
+    border-top: none;
+}
+.blank .rules  {
+    top: .4in !important;
+    height: 3in !important;
+    bottom: 0 !important;
 }
 
 
@@ -392,6 +473,7 @@ div[name]:after {
     z-index: 1;
 }
 .enemy div[name]:before {
+    font-family: happylucky;
     position: absolute;
     top: -.15in;
     left: 0;
@@ -400,12 +482,13 @@ div[name]:after {
     width: 100%;
     color: black;
     font-size: 24pt;
-    letter-spacing: -1.5pt;
+    letter-spacing: 1pt;
     line-height: 24pt;
     text-align: center;
     -webkit-text-stroke: 5pt black;
 }
 .enemy div[name]:after {
+    font-family: happylucky;
     position: absolute;
     top: -.15in;
     left: 0;
@@ -414,7 +497,7 @@ div[name]:after {
     width: 100%;
     color: rgba(230,230,230,1);
     font-size: 24pt;
-    letter-spacing: -1.5pt;
+    letter-spacing: 1pt;
     line-height: 24pt;
     text-align: center;
 }
@@ -429,7 +512,7 @@ div[name]:after {
     font-size: 16pt;
     letter-spacing: -1.5pt;
     line-height: 16pt;
-    text-align: center;
+    text-align: left;
 }
 .instruction .image {
     display: none !important;
@@ -448,21 +531,19 @@ div[name]:after {
     top: 0;
     width: .7in;
     flex-shrink: 1;
-}
-.instruction div.icon:nth-child(2) div[stat] {
-    right: 0;
+    scale: .8;
 }
 .instruction div.icon div.definition {
-    padding-left: .6in;
+    font-size: 13pt;
+    letter-spacing: -.5pt;
+    padding-left: .7in;
 }
 .instruction div.explanation {
     font-size: 14pt;
     text-align: left;
+    letter-spacing: -.5pt;
     padding: 0 10pt 0 10pt;
-}
-.instruction div.icon:nth-child(2) div.definition {
-    padding-left: 0;
-    padding-right: .6in;
+    line-height: 18pt;
 }
 
 .instruction div.tracker {
@@ -474,28 +555,32 @@ div[name]:after {
     transform: scale(.7);
 }
 .instruction div.tracker div[health]:nth-of-type(1) {
-    right: 1.6in;
-    top: 0;
+    right: 1.5in;
+    top: .1in;
 }
 .instruction div.tracker div[health]:nth-of-type(2) {
-    right: .3in;
-    top: 0;
+    right: .4in;
+    top: .1in;
 }
 .instruction div.tracker div[health]:nth-of-type(3) {
     right: .95in;
     top: 1.2in;
 }
 .instruction div.tracker div[health]:nth-of-type(4) {
-    right: 1.6in;
-    top: 2.4in;
+    right: 1.5in;
+    top: 2.3in;
 }
 .instruction div.tracker div[health]:nth-of-type(5) {
-    right: .3in;
-    top: 2.4in;
+    right: .4in;
+    top: 2.3in;
 }
 
-.instruction .athlete div.tracker div[health] {
 
+
+instruction div.tracker {
+    top: 0;
+    height: 3.4in;
+    background-color: transparent;
 }
 
 
@@ -543,7 +628,171 @@ button {
 
 /* change scale() to match print size */
 .card.api2pdf {
-    transform: scale(2);
     transform-origin: top left;
 }
+.card.api2pdf.scale-2 {
+    transform: scale(2);
+}
+.card.api2pdf.scale-3 {
+    transform: scale(3);
+}
+.card.api2pdf.scale-4 {
+    transform: scale(4);
+}
+.card.api2pdf.scale-5 {
+    transform: scale(5);
+}
 
+.rules.energy {
+    top: 0;
+    left: .5in;
+    right: .5in;
+    bottom: 0;
+    height: auto;
+    display: flex;
+    padding: 0;
+    border-left: .05in solid #000;
+    border-right: .05in solid #000;
+    justify-content: center;
+}
+.rules.energy > div {
+    border-top: .05in solid #000;
+    padding: .08in 0 .08in 0;
+    text-align: center;
+}
+.rules.energy > div:nth-of-type(1) {
+    border-top: 0;
+}
+
+
+
+.card-back:after {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.card-back div.logo {
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    bottom: 0;
+    z-index: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.card-back div.logo.first {
+    bottom: -.07in;
+    left: .1in;
+    transform: rotate(5deg);
+}
+.card-back div.logo.second {
+    top: -.07in;
+    right: .1in;
+    transform: rotate(185deg);
+}
+
+
+
+.page {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -.5px;
+    border-radius: 0 !important;
+    background-color: rgba(245,245,245,1);
+    padding: .15in;
+    text-align: justify;
+}
+.page .number {
+    position: absolute;
+    bottom: .05in;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.page h2:first-child {
+    margin-top: 0;
+}
+.page h2 {
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 16px 0 4px 0;
+}
+.page h3 {
+    font-size: 12px;
+    font-weight: bolder;
+    margin: 8px 0 2px 0;
+}
+.page p {
+    margin: 0 0 8px 0;
+}
+
+.page img {
+    display: block;
+    margin: 0 0 16px 0;
+    width: 100%;
+}
+.page table {
+    margin: 0 0 16px 0;
+}
+
+
+
+.page .stat {
+    height: 11px;
+    position: relative;
+    display: inline-block;
+}
+.page .stat.stat-1 {
+    width: 14px;
+}
+.page .stat.stat-2 {
+    width: 24px;
+}
+.page .stat.stat-3 {
+    width: 32px;
+}
+.page .stat img {
+    display: inline-block !important;
+    height: 18px !important;
+    width: auto !important;
+    margin: 0;
+    vertical-align: bottom;
+    position: absolute;
+}
+
+.page .stat.power img {
+    height: 18px !important;
+    width: auto !important;
+    top: -3px;
+    left: -2px;
+}
+.page .stat.block img {
+    height: 14px !important;
+    width: auto !important;
+    top: 0;
+    left: 0;
+}
+.page .stat.luck img {
+    height: 18px !important;
+    width: auto !important;
+    top: -3px;
+    left: -2px;
+}
+
+.foe-stamp {
+    position: absolute;
+
+}
+.foe-stamp img {
+    width: .75in;
+    height: .75in;
+}
+.foe-stamp.bottom-right {
+    right: 0;
+    bottom: -.25in;
+}
