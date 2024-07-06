@@ -378,7 +378,7 @@ function showEnemies()
         if (card.level) {
             newCard.querySelector('div[level]').setAttribute('level', card.level);
         } else {
-            newCard.querySelector('div.[level]').remove();
+            newCard.querySelector('div[level]').remove();
         }
 
         mainGrid.appendChild(newItem);
@@ -480,16 +480,47 @@ let fileNames = [];
 
 function saveImagesButton(type = 'digital') {
     console.log(type);
-    if (type.toLowerCase() == 'digital') {
-        saveImages(2);
-    } else if (type.toLowerCase() == 'print') {
-        saveImages(5);
+
+    // convert rule images to base64
+    let ruleImages = document.querySelectorAll('img.rule-image');
+    let imageCount = ruleImages.length;
+    let imagesSet = 0;
+    for (let i in ruleImages) {
+        let ruleImage = ruleImages[i];
+        if (typeof ruleImage === 'object') {
+            let imageSrc = ruleImage.getAttribute('src');
+            toDataURL(imageSrc, function(dataUrl) {
+                ruleImage.setAttribute('src', dataUrl);
+            });
+
+            imagesSet++;
+            if (imagesSet >= imageCount) {
+
+                setTimeout(function () {
+                    if (type.toLowerCase() == 'digital') {
+                        saveImages(2);
+                    } else if (type.toLowerCase() == 'print') {
+                        saveImages(5);
+                    }
+                }, 1000);
+
+
+            }
+        }
     }
+
+
+
 }
+
 
 function saveImages(scaleFactor) {
 
+
     console.log('start save');
+
+
+
 
     cardCount = 0;
     cardsLoaded = 0;
@@ -509,6 +540,7 @@ function saveImages(scaleFactor) {
 
 
     let namesOnly = [/*'hairspray', 'sunglasses'*/];
+    let pageCount = 1;
 
     for (let i in cards) {
         let cardElement = cards[i];
@@ -558,6 +590,10 @@ function saveImages(scaleFactor) {
                 .replaceAll(' ', '-')
                 .replaceAll('\'', '');
             fileName = key+'_'+level+'_'+name+'.png';
+
+        } else if (cardElement.classList.contains('page')) {
+            fileName = 'Page_'+pageCount+'.png';
+            pageCount++;
 
         } else {
             let key = cardElement.getAttribute('key') ?? '_';
@@ -635,4 +671,18 @@ function urlToPromise(url) {
             }
         });
     });
+}
+
+function toDataURL(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+        var reader = new FileReader();
+        reader.onloadend = function() {
+            callback(reader.result);
+        }
+        reader.readAsDataURL(xhr.response);
+    };
+    xhr.open('GET', url);
+    xhr.responseType = 'blob';
+    xhr.send();
 }

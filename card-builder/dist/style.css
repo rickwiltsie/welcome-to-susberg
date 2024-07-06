@@ -714,7 +714,8 @@ button {
 }
 
 
-.page h2:first-child {
+.page h2:first-child,
+.page h3:first-child {
     margin-top: 0;
 }
 .page h2 {
@@ -725,7 +726,7 @@ button {
 .page h3 {
     font-size: 12px;
     font-weight: bolder;
-    margin: 8px 0 2px 0;
+    margin: 8px 0 0 0;
 }
 .page p {
     margin: 0 0 8px 0;
@@ -738,12 +739,16 @@ button {
 }
 .page table {
     margin: 0 0 16px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+.page table .order td {
+    border-bottom: 1px solid #000;
 }
 
 
-
 .page .stat {
-    height: 11px;
+    height: 10px;
     position: relative;
     display: inline-block;
 }
