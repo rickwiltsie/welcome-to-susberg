@@ -431,8 +431,8 @@
 
                 <p>For your first game, build the foe deck by placing cards from the piles in the following order.</p>
                 <p>• Place 1 Lv.4 card face down on the table.<br/>
-                    • Place 5 Lv.3 cards on top.<br/>
-                    • Place 5 Lv.2 cards on top.<br/>
+                    • Place 3 Lv.3 cards on top.<br/>
+                    • Place 4 Lv.2 cards on top.<br/>
                     • Place 5 Lv.1 cards on top.<br/>
                     • Put the remaining foes away.</p>
                 <p><u>For future games, see page 9 for more challenging foe decks.</u></p>
@@ -567,8 +567,8 @@
                         <td>Beginner</td>
                         <td>-</td>
                         <td>1</td>
-                        <td>5</td>
-                        <td>5</td>
+                        <td>3</td>
+                        <td>4</td>
                         <td>5</td>
                     </tr>
                     <tr>
