@@ -379,7 +379,7 @@
                 <h2>
                     Overview</h2>
                 <p>
-                    Players take on the roles of young kids defending their hometown of Susberg from the foes that besiege it from the shadows.
+                    Players take on the roles of kids defending their hometown of Susberg from the foes that besiege it from the shadows.
                 </p>
                 <h2>Contents</h2>
                 <p>
@@ -407,7 +407,7 @@
             <div class="page-rules">
 
                 <h2>Player Setup</h2>
-                <p>Each player chooses their character, and gathers their cards. The ten Starter cards are removed to make the player's starting deck. (In 3-4 player games remove two power <span class="stat stat-1 power"><img src="extras/power.png"></span> cards) The remaining cards are shuffled, becoming the Loot Deck. Three of these are drawn face up making the Loot Pile.</p>
+                <p>Each player chooses their character, and gathers their cards. The ten Starter cards are removed to make the player's starting deck. (In 3-4 player games remove two power <span class="stat stat-1 power"><img src="extras/power.png"></span> cards.) The remaining cards are shuffled, becoming the Loot Deck. Three of these are drawn face up making the Loot Pile.</p>
 
                 <img src="extras/player-setup.png" alt="Diagram showing the player's board" class="rule-image">
 
@@ -449,7 +449,7 @@
             <div class="page-rules">
 
                 <h2>Turns</h2>
-                <p>Each turn players draw 5 cards from their deck and place them on the table. (4 cards in a 3-4 player game) If a player must draw but has no cards, shuffle the discard pile to rebuild the deck, and continue drawing.</p>
+                <p>Each turn players draw 5 cards from their deck and place them on the table (4 cards in a 3-4 player game). If a player must draw but has no cards, shuffle the discard pile to rebuild the deck, and continue drawing.</p>
                 <p>Then if the board has less than 3 foes, draw them face up from the foe deck until it does.</p>
                 <h3>Phase 1) Attack</h3>
                 <p>Players combine their power <span class="stat stat-1 power"><img src="extras/power.png" class="rule-image"></span> to defeat foes.</p>
@@ -472,7 +472,7 @@
                 <p>Players should discuss with each other how much power <span class="stat stat-1 power"><img src="extras/power.png" class="rule-image"></span> they have and how to distribute it amongst the foes. To defeat a foe use power on it equal to or greater than its health.</p>
 
                 <img src="extras/power-example.png" class="rule-image" alt="Diagram showing how Power is used against foes">
-                <p>Power groups (<span class="stat stat-2 power"><img src="extras/power2.png" class="rule-image"></span>, <span class="stat stat-3 power"><img src="extras/power3.png" class="rule-image"></span>) cannot be split between targets, and can only damage 1 foe.</p>
+                <p>Power groups <span class="stat stat-2 power"><img src="extras/power2.png" class="rule-image"></span> <span class="stat stat-3 power"><img src="extras/power3.png" class="rule-image"></span> cannot be split between targets, and can only damage 1 foe.</p>
 
                 <div class="number">5</div>
             </div>
@@ -490,7 +490,7 @@
                 <p>Each remaining foe attacks each player with its power. A player must use their block <span class="stat stat-1 block"><img src="extras/block.png" class="rule-image"></span> equal to or greater than the foes power, or they lose 1 health.</p>
 
                 <img src="extras/block-example.png" alt="Diagram showing how Block defends against foes" class="rule-image">
-                <p>Block groups (<span class="stat stat-2 block"><img src="extras/block2.png" class="rule-image"></span>, <span class="stat stat-3 block"><img src="extras/block3.png" class="rule-image"></span>) cannot be split between targets, and can only defend against 1 foe.</p>
+                <p>Block groups <span class="stat stat-2 block"><img src="extras/block2.png" class="rule-image"></span> <span class="stat stat-3 block"><img src="extras/block3.png" class="rule-image"></span> cannot be split between targets, and can only defend against 1 foe.</p>
 
                 <div class="number">6</div>
             </div>
@@ -505,7 +505,7 @@
 
                 <h2>Phase 3) Loot</h2>
                 <p>Players draw one card from their loot deck for free, and place it in their loot pile. Further draws cost 1 luck <span class="stat stat-1 luck"><img src="extras/luck.png" class="rule-image"></span>.</p>
-                <p>Defeated foes reward luck to each player that can be spent to buy cards from their loot pile.</p>
+                <p>Defeated foes reward luck to each player, which can then be spent to buy cards from their loot pile.</p>
                 <img src="extras/luck-example.png" alt="" class="rule-image">
 
                 <div class="number">7</div>
@@ -520,13 +520,13 @@
             <div class="page-rules">
 
                 <h2>Card Rules</h2>
-                <p>Some cards have 2 actions instead of one. Normally both actions can be used, but some require both be used, or only one action may be used..<p>
+                <p>Some cards have 2 actions instead of one. Normally both actions can be used, but some require both be used, or only one action may be used.<p>
                 <p>Card effects always refer to the owner of the card, unless otherwise stated.</p>
                 <p>Effects from cards only last during the turn it is played.</p>
 
                 <h2>Foe Rules</h2>
                 <p>If a foe says to do something, each player must do it.</p>
-                <p>When more than one foe triggers the same event (When drawn, when defeated), players decide their order.</p>
+                <p>When more than one foe triggers the same event (when drawn, when defeated), players decide their order.</p>
                 <p>If a foe has an effect when it is drawn, all foes are revealed before it takes effect.</p>
 
 
@@ -543,7 +543,7 @@
                 <h2>Rule Sets</h2>
                 <p>Players may build a foe deck with a different number of foes for different experiences.</p>
 
-                <p>Separate foe cards by level to create 4 piles, and shuffle each of the piles.. Build the foe deck by placing cards from the piles in the following order.</p>
+                <p>Separate foe cards by level to create 4 piles, and shuffle each of the piles. Build the foe deck by placing cards from the piles in the following order.</p>
 
                 <table>
                     <tbody>
@@ -632,12 +632,12 @@
             <div class="page-rules">
 
                 <h3>Music</h3>
-                <p>Musicians cards may have an action that gives  (Music). Other cards may spend it to perform certain actions.</p>
+                <p>Musician cards may have an action that gives Music <span class="stat stat-1 music"><img src="extras/music.png" class="rule-image"></span>. Other cards may spend it to perform certain actions.</p>
 
                 <img src="extras/music-energy-example.png" alt="" class="rule-image">
 
                 <h3>Energy</h3>
-                <p>The inventor may get additional actions when they have a minimum of energy. Energy is a running score that can be gained from cards.</p>
+                <p>The inventor may get additional actions when they have at least a specified amount of energy. Energy is a running score that can be gained from cards.</p>
 
                 <h3>Repair</h3>
                 <p>Inventors can repair cards by returning them to the bottom of a player's deck.</p>
