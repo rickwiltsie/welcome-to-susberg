@@ -392,7 +392,7 @@
 
 
                 <h2>Objective</h2>
-                <p>The players win when all foes in the foe deck have been defeated. The players lose if they are all out of health.</p>
+                <p>The players win when all foes in the Foe Deck have been defeated. The players lose if they are all out of Health.</p>
 
                 <div class="number">1</div>
             </div>
@@ -407,7 +407,7 @@
             <div class="page-rules">
 
                 <h2>Player Setup</h2>
-                <p>Each player chooses their character, and gathers their cards. The ten Starter cards are removed to make the player's starting deck. (In 3-4 player games remove two power <span class="stat stat-1 power"><img src="extras/power.png"></span> cards.) The remaining cards are shuffled, becoming the Loot Deck. Three of these are drawn face up making the Loot Pile.</p>
+                <p>Each player chooses their character, and gathers their cards. The ten Starter cards are removed to make the player's starting deck. (In 3-4 player games remove two Power <span class="stat stat-1 power"><img src="extras/power.png"></span> cards.) The remaining cards are shuffled, becoming the Loot Deck. Three of these are drawn face up making the Loot Pile.</p>
 
                 <img src="extras/player-setup.png" alt="Diagram showing the player's board" class="rule-image">
 
@@ -429,13 +429,13 @@
 
                 <img src="extras/foe-details.png" class="rule-image" alt="Diagram showing how to assemble the first foe deck">
 
-                <p>For your first game, build the foe deck by placing cards from the piles in the following order.</p>
+                <p>For your first game, build the Foe Deck by placing cards from the piles in the following order.</p>
                 <p>• Place 1 Lv.4 card face down on the table.<br/>
                     • Place 3 Lv.3 cards on top.<br/>
                     • Place 4 Lv.2 cards on top.<br/>
                     • Place 5 Lv.1 cards on top.<br/>
                     • Put the remaining foes away.</p>
-                <p><u>For future games, see page 9 for more challenging foe decks.</u></p>
+                <p><u>For future games, see page 9 for more challenging Foe Decks.</u></p>
 
                 <div class="number">3</div>
             </div>
@@ -449,14 +449,14 @@
             <div class="page-rules">
 
                 <h2>Turns</h2>
-                <p>Each turn players draw 5 cards from their deck and place them on the table (4 cards in a 3-4 player game). If a player must draw but has no cards, shuffle the discard pile to rebuild the deck, and continue drawing.</p>
-                <p>Then if the board has less than 3 foes, draw them face up from the foe deck until it does.</p>
+                <p>Each turn players draw 5 cards from their deck and place them face up on the table (4 cards in a 3-4 player game). If a player must draw but has no cards, shuffle the discard pile to rebuild the deck, and continue drawing.</p>
+                <p>Then if the board has less than 3 foes, draw them face up from the Foe Deck until it does.</p>
                 <h3>Phase 1) Attack</h3>
-                <p>Players combine their power <span class="stat stat-1 power"><img src="extras/power.png" class="rule-image"></span> to defeat foes.</p>
+                <p>Players combine their Power <span class="stat stat-1 power"><img src="extras/power.png" class="rule-image"></span> to defeat foes.</p>
                 <h3>Phase 2) Defend</h3>
-                <p>Each player defends from foes using their block <span class="stat stat-1 block"><img src="extras/block.png" class="rule-image"></span>.</p>
+                <p>Each player defends from foes using their Block <span class="stat stat-1 block"><img src="extras/block.png" class="rule-image"></span>.</p>
                 <h3>Phase 3) Loot</h3>
-                <p>Each player buys loot with luck <span class="stat stat-1 luck"><img src="extras/luck.png" class="rule-image"></span> gained from defeated foes.</p>
+                <p>Each player buys loot cards with Luck <span class="stat stat-1 luck"><img src="extras/luck.png" class="rule-image"></span> gained from defeated foes.</p>
 
                 <div class="number">4</div>
             </div>
@@ -469,7 +469,7 @@
 
             <div class="page-rules">
                 <h2>Phase 1) Attack</h2>
-                <p>Players should discuss with each other how much power <span class="stat stat-1 power"><img src="extras/power.png" class="rule-image"></span> they have and how to distribute it amongst the foes. To defeat a foe use power on it equal to or greater than its health.</p>
+                <p>Players should discuss with each other how much Power <span class="stat stat-1 power"><img src="extras/power.png" class="rule-image"></span> they have and how to distribute it amongst the foes. To defeat a foe use Power on it equal to or greater than its Health.</p>
 
                 <img src="extras/power-example.png" class="rule-image" alt="Diagram showing how Power is used against foes">
                 <p>Power groups <span class="stat stat-2 power"><img src="extras/power2.png" class="rule-image"></span> <span class="stat stat-3 power"><img src="extras/power3.png" class="rule-image"></span> cannot be split between targets, and can only damage 1 foe.</p>
@@ -487,7 +487,7 @@
 
 
                 <h2>Phase 2) Defend</h2>
-                <p>Each remaining foe attacks each player with its power. A player must use their block <span class="stat stat-1 block"><img src="extras/block.png" class="rule-image"></span> equal to or greater than the foes power, or they lose 1 health.</p>
+                <p>Each remaining foe attacks each player with its Power. A player must use their Block <span class="stat stat-1 block"><img src="extras/block.png" class="rule-image"></span> equal to or greater than the foes Power, or they lose 1 Health.</p>
 
                 <img src="extras/block-example.png" alt="Diagram showing how Block defends against foes" class="rule-image">
                 <p>Block groups <span class="stat stat-2 block"><img src="extras/block2.png" class="rule-image"></span> <span class="stat stat-3 block"><img src="extras/block3.png" class="rule-image"></span> cannot be split between targets, and can only defend against 1 foe.</p>
@@ -504,8 +504,8 @@
             <div class="page-rules">
 
                 <h2>Phase 3) Loot</h2>
-                <p>Players draw one card from their loot deck for free, and place it in their loot pile. Further draws cost 1 luck <span class="stat stat-1 luck"><img src="extras/luck.png" class="rule-image"></span>.</p>
-                <p>Defeated foes reward luck to each player, which can then be spent to buy cards from their loot pile.</p>
+                <p>Players draw one card from their Loot Deck for free, and place it in their Loot Pile. Further draws cost 1 luck <span class="stat stat-1 luck"><img src="extras/luck.png" class="rule-image"></span>.</p>
+                <p>Defeated foes reward Luck to each player. This can be spent to buy any cards from their Loot Pile so long as they have enough Luck.</p>
                 <img src="extras/luck-example.png" alt="" class="rule-image">
 
                 <div class="number">7</div>
@@ -541,9 +541,9 @@
 
             <div class="page-rules">
                 <h2>Rule Sets</h2>
-                <p>Players may build a foe deck with a different number of foes for different experiences.</p>
+                <p>Players may build a Foe Deck with a different number of foes for different experiences.</p>
 
-                <p>Separate foe cards by level to create 4 piles, and shuffle each of the piles. Build the foe deck by placing cards from the piles in the following order.</p>
+                <p>Separate foe cards by Level to create 4 piles, and shuffle each of the piles. Build the Foe Deck by placing cards from the piles in the following order.</p>
 
                 <table>
                     <tbody>
@@ -618,7 +618,7 @@
                 <p>Artists can stash cards. A stashed card is set aside by the player, not to be returned to its discard pile. It can then be used on a future turn.</p>
 
                 <h3>Mixing</h3>
-                <p>The artist may get additional actions by mixing Paints. Paints are considered mixed when there are at least two cards with "Paint" in the name.</p>
+                <p>The Artist may get additional actions by mixing Paints. Paints are considered mixed when there are at least two cards with "Paint" in the name.</p>
 
                 <div class="number">10</div>
             </div>
@@ -637,7 +637,7 @@
                 <img src="extras/music-energy-example.png" alt="" class="rule-image">
 
                 <h3>Energy</h3>
-                <p>The inventor may get additional actions when they have at least a specified amount of energy. Energy is a running score that can be gained from cards.</p>
+                <p>The Inventor may get additional actions when they have at least a specified amount of Energy. Energy is a running score that can be gained from cards.</p>
 
                 <h3>Repair</h3>
                 <p>Inventors can repair cards by returning them to the bottom of a player's deck.</p>

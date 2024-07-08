@@ -741,6 +741,14 @@ button {
     margin: 0 0 16px 0;
     width: 100%;
     border-collapse: collapse;
+    font-size: 11px;
+}
+.page table td:first-child {
+    text-align: left;
+}
+.page table td {
+    font-size: 11px;
+    text-align: center;
 }
 .page table .order td {
     border-bottom: 1px solid #000;

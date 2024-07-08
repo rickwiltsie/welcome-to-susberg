@@ -169,104 +169,42 @@
 
     <div id="rules" class="px-[20px]">
 
-        <h1 class="text-xl font-black mt-8 text-teal-500">Contents</h1>
-        <p class="mb-4">
-            &bull; 34 Athlete cards<br>
-            &bull; 34 Inventor cards<br>
-            &bull; 34 Musician cards<br>
-            &bull; 34 Artist cards<br>
-            &bull; 40 Foe cards<br>
-        </p>
 
-        <h1 class="text-xl font-black mt-8 text-teal-500 text-teal-500">Overview</h1>
-        <p class="mb-4">Each player chooses a character and starts with a deck of 10 Starter cards. Each turn players must attack foes, and then defend against those that weren't defeated. Defeated foes reward Luck that can be used to purchase new cards. Each player has 5 health, and can no longer play when it reaches 0. If all players have 0 health, they lose. Players win when they defeat all foes.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Player Setup</h1>
-        <p class="mb-4">Each player selects a character, and gathers their cards. The 10 cards labeled "Starter" are used to create the starting deck. The remaining cards are shuffled, and become the Loot Deck. 3 Loot Piles are made by laying out 3 cards from the Loot Deck face up on the table.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Foe Setup</h1>
-        <p class="mb-4">Separate foe cards by their Lv (Level) into 4 piles, and shuffle them. Build the foe deck by placing cards in the following order.<br>
-            &bull; Place 2 Lv3 cards face down on the table.<br>
-            &bull; Place 1 Lv4 card on top.<br>
-            &bull; Place 7 Lv3 cards on top.<br>
-            &bull; Place 6 Lv2 cards on top.<br>
-            &bull; Place 5 Lv1 cards on top.<br>
-            &bull; Put the remaining foes away.
-        </p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Play</h1>
-        <p class="mb-4">Players play each turn together at the same time. Each turn has four phases, and occur in this order: 1) Starting Phase 2) Attack Phase 3) Defend Phase 4) Loot Phase</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">1) Starting Phase</h1>
-        <p class="mb-4">Each player draws 5 cards from their deck. If there are no cards left to draw, shuffle the discard pile to become the new deck, and continue drawing. If the board has less than 3 foes, draw them face up until it does.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">2) Attack Phase</h1>
-        <p class="mb-4">Players place their cards with <img class="inline-block rounded-md p-px w-auto h-6 bg-white" src="stats/power.png"> (Power) face up near foes to indicate they want to damage it. Players should discuss how to split their cards between foes for the best results. Once all players agree on a plan, damage is dealt. If a foe takes <img class="inline-block rounded-md p-px w-auto h-6 bg-white" src="stats/power.png"> equal to or greater than their <img class="inline-block rounded-md p-px w-auto h-6 bg-white" src="stats/health.png"> (Health), they are defeated and set aside.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">3) Defend Phase</h1>
-        <p class="mb-4">The foes remaining from the attack phase now damage the players. Each foe attacks each player, dealing damage equal to its <img class="inline-block rounded-md p-px w-auto h-6 bg-white" src="stats/power.png">. Players place their cards with <img class="inline-block rounded-md p-px w-auto h-6 bg-white" src="stats/block.png"> (Block) face up near foes to indicate they wish to defend against it. If a player does not have enough <img class="inline-block rounded-md p-px w-auto h-6 bg-white" src="stats/block.png"> to defend from a foe, they lose only 1 health regardless of how much Power is left unblocked.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">4) Loot Phase</h1>
-        <p class="mb-4">Each defeated foe rewards <img class="inline-block rounded-md p-px w-auto h-6 bg-white" src="stats/luck.png"> (Luck) to each player. That Luck can be spent to purchase cards from the player's Loot Piles. Players may also spend 1 Luck to reveal a Loot card and place it in a Loot Pile. When this phase is over, players may either reveal a Loot card, or fill empty Loot Piles. After the Loot Phase players return their cards to their discard pile, and defeated foes are placed in their discard pile.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Card Rules</h1>
-        <p class="mb-4">Cards can have up to two actions that can be taken in any order, and whenever the player would like. A player may use one or both actions unless it says "or" in which case they can only take one, or it says "and" in which they must take both. Cards always refer to the player that owns it, unless otherwise noted. Effects from cards only last while in play.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Foe Rules</h1>
-        <p class="mb-4">If a foe requires a player to do something, each player must do it unless otherwise noted. Some foes trigger events at certain moments (When drawn, when defeated). If more than one thing would happen at the same time, players decide the order.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Stat Groups</h1>
-        <p class="mb-4">Stat groups (<img class="inline-block rounded-md p-px w-auto h-6 bg-white" src="stats/power2.png">, <img class="inline-block rounded-md p-px w-auto h-6 bg-white" src="stats/block2.png">) cannot be split between targets. Power groups can only damage 1 foe, while Block groups can only defend from 1 foe.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">3-4 Player Games</h1>
-        <p class="mb-4">3 and 4 player games have slightly different rules than a 2 player game. Instead of a 10 card starting deck, 2 <img class="inline-block rounded-md p-px w-auto h-6 bg-white" src="stats/power.png"> cards are removed making an 8 card deck. Instead of having a hand size of 5 cards, players have 4. The Foe deck is built differently as well, with foes being placed down in the order of the following chart.</p>
-
-        <table class="border-collapse border border-slate-500 mb-4">
-            <tr>
-                <td class="p-2 border border-slate-500"></td>
-                <td class="p-2 border border-slate-500">Lv.3</td>
-                <td class="p-2 border border-slate-500">Lv.4</td>
-                <td class="p-2 border border-slate-500">Lv.3</td>
-                <td class="p-2 border border-slate-500">Lv.2</td>
-                <td class="p-2 border border-slate-500">Lv.1</td>
-            </tr>
-            <tr>
-                <td class="p-2 border border-slate-500">3 Players</td>
-                <td class="p-2 border border-slate-500">2</td>
-                <td class="p-2 border border-slate-500">1</td>
-                <td class="p-2 border border-slate-500">8</td>
-                <td class="p-2 border border-slate-500">6</td>
-                <td class="p-2 border border-slate-500">4</td>
-            </tr>
-            <tr>
-                <td class="p-2 border border-slate-500">4 Players</td>
-                <td class="p-2 border border-slate-500">2</td>
-                <td class="p-2 border border-slate-500">1</td>
-                <td class="p-2 border border-slate-500">9</td>
-                <td class="p-2 border border-slate-500">6</td>
-                <td class="p-2 border border-slate-500">3</td>
-            </tr>
-        </table>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Trash</h1>
-        <p class="mb-4">Each player has a trash pile that contains cards that are no longer in the game. When a card is trashed it is set in this pile.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Stash</h1>
-        <p class="mb-4">When a card is stashed, it's set aside by the player, not to be returned to its discard pile. It can then be used on a later turn.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Energy</h1>
-        <p class="mb-4">Inventors have a running score called energy. Cards give the player energy that remains for the entire game. Some cards have actions that require the player to have scored a minimum amount of energy.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Music</h1>
-        <p class="mb-4">Musicians cards may have an action that gives <img class="inline-block rounded-md p-0.5 w-auto h-6 bg-white" src="stats/music.png"> (Music). Other cards may spend it to perform certain actions.</p>
-
-        <h1 class="text-xl font-black mt-8 text-teal-500">Paint</h1>
-        <p class="mb-4">Artists have several cards with "Paint" in the name. When these cards are played with other paint cards, they are mixed and perform an action.</p>
-
-
-
-
-
+        <ul class="flex flex-wrap justify-start mt-12">
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_1.png" class="overflow-hidden">
+            </li>
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_2.png" class="overflow-hidden">
+            </li>
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_3.png" class="overflow-hidden">
+            </li>
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_4.png" class="overflow-hidden">
+            </li>
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_5.png" class="overflow-hidden">
+            </li>
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_6.png" class="overflow-hidden">
+            </li>
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_7.png" class="overflow-hidden">
+            </li>
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_8.png" class="overflow-hidden">
+            </li>
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_9.png" class="overflow-hidden">
+            </li>
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_10.png" class="overflow-hidden">
+            </li>
+            <li class="w-4/5 sm:w-1/2 p-2 relative">
+                <img src="cards/Page_11.png" class="overflow-hidden">
+            </li>
+        </ul>
 
     </div>
 
