@@ -56,14 +56,39 @@
 </head>
 <body class="font-sans text-base md:text-xl bg-black px-0 md:px-[60px] lg:px-[80px]">
 
-<div class="background fixed left-0 top-0 w-full select-none">
-    <img src="images/bg.png" class="absolute w-full h-auto max-w-[1100px] left-1/2 -translate-x-1/2 scale-[1.4] origin-top" alt="The mysterious town of Susberg at night">
+<div class="background fixed left-0 -top-14 md:-top-24 lg:-top-20 w-full select-none">
+    <img src="images/bg.png" class="absolute w-full h-auto max-w-[1100px] left-1/2 -translate-x-1/2 scale-[1.3] lg:scale-[1.2] origin-top" alt="The mysterious town of Susberg at night">
 </div>
 
-<div class="container relative max-w-[900px] w-full bg-black text-emerald-100 lg:mx-auto px-[20px] pt-[40px] pb-[200px] mt-[40vh] sm:mt-[50vh] lg:mt-[60vh] md:rounded-3xl">
+<div class="container relative max-w-[900px] w-full text-emerald-100 lg:mx-auto">
 
-    <div class="sign absolute w-[300px] md:w-[400px] top-0 -translate-y-full h-auto overflow-hidden">
-        <img src="images/logo.png" alt="A road sign with the words 'Welcome to Susberg'.">
+    <a target="_blank" class="absolute overflow-hidden -top-12 right-4 md:right-0 inline-block rounded-xl bg-black overflow-hidden hover:bg-red-950" aria-label="Download the .pcio game file" href="https://discord.gg/DvVZrSYe83">
+
+        <div class="inline-block text-sm px-4 pb-1 pt-6 border border-red-500 rounded-xl text-red-500 flex items-center z-10">
+
+
+            <div>
+                Next Playtesting &bull; Sun 8/4 &bull; 2pm EST &bull; 4pm PST
+            </div>
+
+            <div>
+            <svg class="fill-red-500 ml-2 w-8 h-8" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                <g>
+                    <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill-rule="nonzero">
+                    </path>
+                </g>
+            </svg>
+            </div>
+
+        </div>
+    </a>
+</div>
+
+
+<div class="container relative max-w-[900px] w-full bg-black text-emerald-100 lg:mx-auto px-[20px] pt-[20px] pb-[200px] mt-[20vh] sm:mt-[25vh] lg:mt-[30vh] md:rounded-3xl">
+
+    <div class="sign absolute w-[210px] md:w-[310px] top-0 -translate-y-full h-auto overflow-hidden z-0">
+        <img class="relative left-[10px] top-[15px] w-[180px] md:w-[240px] -rotate-[5deg]" src="images/logo.png" alt="A road sign with the words 'Welcome to Susberg'.">
     </div>
 
     <div class="absolute right-0 -top-[70px] w-[120px] h-[70px] overflow-hidden">
@@ -85,11 +110,23 @@
 
 
 
-    <div class="text-2xl lg:text-4xl flex justify-center gap-4 md:gap-12 md:gap-4 mb-[50px] items-center">
+    <div class="text-2xl lg:text-4xl flex justify-center gap-4 md:gap-12 md:gap-4 mb-[20px] items-center">
 
         <div>
-            <a class="inline-block px-4 py-2 md:px-8 md:py-4 border border-teal-400 rounded-xl inline-block hover:text-teal-200 text-teal-400 hover:bg-cyan-950" aria-label="Download the .pcio game file" href="welcome-to-susberg.pcio">Download</a>
-            <div class="text-2xl text-center mt-2">the Game File</div>
+            <a class="relative inline-block rounded-xl  overflow-hidden" aria-label="Download the .pcio game file" href="welcome-to-susberg.pcio">
+                <div class="absolute inset-[-30px]
+                    rotate-[12deg]
+                    bg-[rgba(45,212,191,.15)] text-[rgba(45,212,191,.1)]
+                    hover:bg-[rgba(45,212,191,.2)] hover:text-[rgba(45,212,191,.15)]
+                    active:bg-[rgba(45,212,191,.25)] active:text-[rgba(45,212,191,.2)]
+                    pattern-checks-md"
+                >
+                </div>
+                <div class="inline-block font-black px-4 py-2 md:px-8 md:py-4 border border-teal-400 rounded-xl text-teal-150">
+                    Download
+                </div>
+            </a>
+            <div class="text-2xl text-center text-teal-200">the Game File</div>
         </div>
 
         <div class="text-3xl md:text-6xl text-teal-400">
@@ -97,8 +134,19 @@
         </div>
 
         <div>
-            <div class="text-2xl text-center mb-2">Import and Play at</div>
-            <a target="_blank" class="inline-block px-4 py-2 md:px-8 md:py-4 border border-teal-400 rounded-xl inline-block hover:text-teal-200 text-teal-400 hover:bg-cyan-950" aria-label="Play the game file at Playingcards.io" href="https://playingcards.io/import">PlayingCards.io</a>
+            <div class="text-2xl text-center mb-2 text-teal-200">Import and Play at</div>
+
+            <a class="relative inline-block rounded-xl  overflow-hidden" aria-label="Download the .pcio game file" href="https://playingcards">
+                <div class="absolute inset-[-30px]
+                -rotate-[12deg]
+                bg-[rgba(45,212,191,.15)] text-[rgba(45,212,191,.1)]
+            hover:bg-[rgba(45,212,191,.2)] hover:text-[rgba(45,212,191,.15)]
+            active:bg-[rgba(45,212,191,.25)] active:text-[rgba(45,212,191,.2)]
+            pattern-checks-md"></div>
+                <div class="inline-block font-black px-4 py-2 md:px-8 md:py-4 border border-teal-400 rounded-xl text-teal-150">
+                    PlayingCards.io
+                </div>
+            </a>
         </div>
 
     </div>
@@ -108,14 +156,15 @@
 
 
 
-    <div class="mb-8 mx-auto 2-full md:w-3/4 border border-teal-400 rounded-xl overflow-hidden relative">
-
+    <div class="mb-[20px] mx-auto md:w-2/3 h-[320px]  rounded-xl overflow-hidden relative
+    border border-2 border-teal-400">
         <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/I4hQtSlXCA8?si=Db3hdnR3hXoPwPWJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
 
 
     <div
+        class="flex justify-around text-center text-xs sm:text-lg md:text-xl text-teal-400 sticky z-20 top-0 bg-black pt-4 -ml-[10px] -mr-[10px] font-black"
         x-init=""
         x-data="{
             test: 'yo',
@@ -150,19 +199,18 @@
 
             }
         }"
-        class="mt-9 flex justify-around text-center text-xs sm:text-lg md:text-2xl text-teal-400 sticky z-20 top-0 bg-black pt-4 -ml-[10px] -mr-[10px] font-black"
     >
-        <a id="link-rules" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border border-b-black text-teal-200 border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('rules')">Rules</a>
+        <a id="link-rules" class="cursor-pointer py-2 flex-1 flex-grow rounded-t-lg border border-b-black text-teal-200 border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('rules')">Rules</a>
 
-        <a id="link-Enemy" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('Enemy')">Foes</a>
+        <a id="link-Enemy" class="cursor-pointer py-2 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('Enemy')">Foes</a>
 
-        <a id="link-R" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('R')">Artist</a>
+        <a id="link-R" class="cursor-pointer py-2 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('R')">Artist</a>
 
-        <a id="link-A" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('A')">Athlete</a>
+        <a id="link-A" class="cursor-pointer py-2 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('A')">Athlete</a>
 
-        <a id="link-I" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('I')">Inventor</a>
+        <a id="link-I" class="cursor-pointer py-2 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('I')">Inventor</a>
 
-        <a id="link-M" class="cursor-pointer py-4 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('M')">Musician</a>
+        <a id="link-M" class="cursor-pointer py-2 flex-1 flex-grow rounded-t-lg border-b border-teal-400 hover:text-teal-200 hover:bg-cyan-950" @click="changePage('M')">Musician</a>
     </div>
 
 
