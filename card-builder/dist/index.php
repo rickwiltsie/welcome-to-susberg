@@ -407,7 +407,7 @@
             <div class="page-rules">
 
                 <h2>Player Setup</h2>
-                <p>Each player chooses their character, and gathers their cards. The ten Starter cards are removed to make the player's starting deck. (In 3-4 player games remove two Power <span class="stat stat-1 power"><img src="extras/power.png"></span> cards.) The remaining cards are shuffled, becoming the Loot Deck. Three of these are drawn face up making the Loot Pile.</p>
+                <p>Each player chooses their character, and gathers their cards. The ten Starter cards are removed to make the player's starting deck. (In 3-4 player games remove a Power <span class="stat stat-1 power"><img src="extras/power.png" class="rule-image"></span> and Block <span class="stat stat-1 block"><img src="extras/block.png" class="rule-image"></span> card.) The remaining cards are shuffled, becoming the Loot Deck. Three of these are drawn face up making the Loot Pile.</p>
 
                 <img src="extras/player-setup.png" alt="Diagram showing the player's board" class="rule-image">
 
@@ -429,11 +429,10 @@
 
                 <img src="extras/foe-details.png" class="rule-image" alt="Diagram showing how to assemble the first foe deck">
 
-                <p>For your first game, build the Foe Deck by placing cards from the piles in the following order.</p>
-                <p>• Place 1 Lv.4 card face down on the table.<br/>
-                    • Place 3 Lv.3 cards on top.<br/>
+                <p>For your first game, build the Foe Deck by placing cards from the piles face down in the following order.</p>
+                <p>• Place 1 Lv.3 card face down on the table.<br/>
                     • Place 4 Lv.2 cards on top.<br/>
-                    • Place 5 Lv.1 cards on top.<br/>
+                    • Place 6 Lv.1 cards on top.<br/>
                     • Put the remaining foes away.</p>
                 <p><u>For future games, see page 9 for more challenging Foe Decks.</u></p>
 
@@ -505,7 +504,7 @@
 
                 <h2>Phase 3) Loot</h2>
                 <p>Players draw one card from their Loot Deck for free, and place it in their Loot Pile. Further draws cost 1 luck <span class="stat stat-1 luck"><img src="extras/luck.png" class="rule-image"></span>.</p>
-                <p>Defeated foes reward Luck to each player. This can be spent to buy any cards from their Loot Pile so long as they have enough Luck.</p>
+                <p>Defeated foes reward Luck to each player. This can be spent to buy any cards from their Loot Pile so long as they have enough Luck. When purchased, players put the card in their discard.</p>
                 <img src="extras/luck-example.png" alt="" class="rule-image">
 
                 <div class="number">7</div>
@@ -520,17 +519,29 @@
             <div class="page-rules">
 
                 <h2>Card Rules</h2>
+                <p>When an effect says "a card" it refers to a card that is in play owned by the player.</p>
                 <p>Some cards have 2 actions instead of one. Normally both actions can be used, but some require both be used, or only one action may be used.<p>
                 <p>Card effects always refer to the owner of the card, unless otherwise stated.</p>
                 <p>Effects from cards only last during the turn it is played.</p>
 
+
+                <div class="number">8</div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="card page">
+
+            <?php include 'print.php'; ?>
+
+            <div class="page-rules">
                 <h2>Foe Rules</h2>
                 <p>If a foe says to do something, each player must do it.</p>
                 <p>When more than one foe triggers the same event (when drawn, when defeated), players decide their order.</p>
                 <p>If a foe has an effect when it is drawn, all foes are revealed before it takes effect.</p>
 
 
-                <div class="number">8</div>
+                <div class="number">9</div>
             </div>
         </div>
     </li>
@@ -566,10 +577,10 @@
                     <tr>
                         <td>Beginner</td>
                         <td>-</td>
+                        <td>-</td>
                         <td>1</td>
-                        <td>3</td>
                         <td>4</td>
-                        <td>5</td>
+                        <td>6</td>
                     </tr>
                     <tr>
                         <td>Easy</td>
@@ -600,7 +611,7 @@
 
                 <p><em>Experiment with your own rules, and share them with others!</em></p>
 
-                <div class="number">9</div>
+                <div class="number">10</div>
             </div>
         </div>
     </li>
@@ -612,15 +623,15 @@
             <div class="page-rules">
                 <h2>Character Abilities</h2>
                 <h3>Trash</h3>
-                <p>Athletes can trash cards and remove them from the game. Athlete cards that are trashed instead go to a trash pile next to the player. </p>
+                <p>Athletes can trash cards in play and remove them from the game. Athlete cards that are trashed instead go to a trash pile next to the player. </p>
 
                 <h3>Stash</h3>
-                <p>Artists can stash cards. A stashed card is set aside by the player, not to be returned to its discard pile. It can then be used on a future turn.</p>
+                <p>Artists can stash cards in play. A stashed card is set aside by the player, not to be returned to its discard pile. It can then be used on a future turn.</p>
 
                 <h3>Mixing</h3>
-                <p>The Artist may get additional actions by mixing Paints. Paints are considered mixed when there are at least two cards with "Paint" in the name.</p>
+                <p>The Artist may get additional actions by mixing Paints. Paints are considered mixed when there are at least two cards with "Paint" in the name are in play.</p>
 
-                <div class="number">10</div>
+                <div class="number">11</div>
             </div>
         </div>
     </li>
@@ -640,9 +651,9 @@
                 <p>The Inventor may get additional actions when they have at least a specified amount of Energy. Energy is a running score that can be gained from cards.</p>
 
                 <h3>Repair</h3>
-                <p>Inventors can repair cards by returning them to the bottom of a player's deck.</p>
+                <p>Inventors can repair cards in play by returning them to the bottom of a player's deck.</p>
 
-                <div class="number">11</div>
+                <div class="number">12</div>
             </div>
         </div>
     </li>
