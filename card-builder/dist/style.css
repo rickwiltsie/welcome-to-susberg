@@ -303,6 +303,15 @@ div[name]:after {
     text-align: center;
 }
 
+.only-in-2player {
+    position: absolute;
+    bottom: .15in;
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 11pt;
+}
+
 .rules {
     position: absolute;
     background: white;

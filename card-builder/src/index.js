@@ -199,6 +199,7 @@ function storeCards(rowData) {
         let fin = card.values[1].formattedValue;
 
 
+
         if (fin > 0 || fin == 'n' || fin == 'x') {
             var storeCard = {
                 key: card.values[0].formattedValue,
@@ -209,6 +210,26 @@ function storeCards(rowData) {
                 rule1: card.values[6].formattedValue ?? null,
                 conjunction: card.values[7].formattedValue ?? null,
                 rule2: card.values[8].formattedValue ?? null,
+                only2Player: false
+            }
+
+            console.log(fin, card.values[8].formattedValue);
+            if (fin == 4 && card.values[8].formattedValue == 'only2Player') {
+                console.log('yes');
+                storeCard.rule2 = '';
+                let only2playerCard = {
+                    key: card.values[0].formattedValue,
+                    count: card.values[1].formattedValue,
+                    art: card.values[3].formattedValue ?? '',
+                    name: card.values[2].formattedValue ?? '',
+                    cost: card.values[5].formattedValue ?? null,
+                    rule1: card.values[6].formattedValue ?? null,
+                    conjunction: card.values[7].formattedValue ?? null,
+                    rule2: null,
+                    only2Player: true
+                }
+
+                cards.push(only2playerCard);
             }
 
             cards.push(storeCard);
@@ -268,7 +289,6 @@ function showCards()
         newItem.classList.remove('clone-source');
 
         let newCard = newItem.querySelector('.card');
-
         newCard.setAttribute('key', card.key);
         newCard.setAttribute('count', card.count);
 
@@ -286,6 +306,10 @@ function showCards()
             newCard.querySelector('div[cost]').setAttribute('cost', card.cost);
         } else {
             newCard.querySelector('div[cost]').remove();
+        }
+
+        if (!card.only2Player) {
+            newCard.querySelector('.only-in-2player').remove();
         }
 
         if (card.art) {

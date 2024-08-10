@@ -41,6 +41,7 @@
                 </div>
 
             </div>
+            <div class="only-in-2player">Only use in 2 player games</div>
         </div>
     </li>
 </ul>
@@ -691,6 +692,29 @@
 
             <?php include 'print.php'; ?>
 
+            <div cost=""><div></div></div>
+            <div class="image">
+                <img src="art/karate-gi.png">
+            </div>
+            <div name="Football Helmet"></div>
+            <div class="rules">
+
+                <div class='rule1'>
+                    Rules 1
+                </div>
+
+            </div>
+            <div class="only-in-2player">(Only use in 2 player games)</div>
+        </div>
+    </li>
+
+
+
+    <li>
+        <div class="card athlete pattern-diagonal-stripes-md" key="X" count="">
+
+            <?php include 'print.php'; ?>
+
             <div cost="2"><div></div></div>
             <div class="image">
                 <img src="art/karate-gi.png">
@@ -782,93 +806,6 @@
             </div>
             <div class="reward"></div>
             <div level="3"></div>
-        </div>
-    </li>
-    <li>
-        <div class="card page">
-
-            <?php include 'print.php'; ?>
-
-            <div class="page-rules">
-
-
-                <div class="number">12</div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="card page">
-
-            <?php include 'print.php'; ?>
-
-            <div class="page-rules">
-
-                <div class="number">4</div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="card page">
-
-            <?php include 'print.php'; ?>
-
-            <div class="page-rules">
-
-                <div class="number">3</div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="card page">
-
-            <?php include 'print.php'; ?>
-
-            <div class="page-rules">
-
-                <div class="number">4</div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="card page">
-
-            <?php include 'print.php'; ?>
-
-            <div class="page-rules">
-
-                <div class="number">3</div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="card page">
-
-            <?php include 'print.php'; ?>
-
-            <div class="page-rules">
-                <div class="number">4</div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="card page">
-
-            <?php include 'print.php'; ?>
-
-            <div class="page-rules">
-
-                <div class="number">3</div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="card page">
-
-            <?php include 'print.php'; ?>
-
-            <div class="page-rules">
-                <div class="number">4</div>
-            </div>
         </div>
     </li>
 
