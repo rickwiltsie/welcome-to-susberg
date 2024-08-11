@@ -201,9 +201,10 @@ function storeCards(rowData) {
 
 
         if (fin > 0 || fin == 'n' || fin == 'x') {
+            console.log('fin',fin);
             var storeCard = {
                 key: card.values[0].formattedValue,
-                count: card.values[1].formattedValue,
+                count: fin == 4 ? 3 : fin,
                 art: card.values[3].formattedValue ?? '',
                 name: card.values[2].formattedValue ?? '',
                 cost: card.values[5].formattedValue ?? null,
@@ -212,6 +213,7 @@ function storeCards(rowData) {
                 rule2: card.values[8].formattedValue ?? null,
                 only2Player: false
             }
+            console.log('fin',fin, storeCard.count);
 
             console.log(fin, card.values[8].formattedValue);
             if (fin == 4 && card.values[8].formattedValue == 'only2Player') {
@@ -219,7 +221,7 @@ function storeCards(rowData) {
                 storeCard.rule2 = '';
                 let only2playerCard = {
                     key: card.values[0].formattedValue,
-                    count: card.values[1].formattedValue,
+                    count: 1,
                     art: card.values[3].formattedValue ?? '',
                     name: card.values[2].formattedValue ?? '',
                     cost: card.values[5].formattedValue ?? null,
@@ -562,11 +564,11 @@ function saveImages(scaleFactor) {
     cardCount = cards.length;
     let currentExtra = 1;
 
-
     let namesOnly = [/*'hairspray', 'sunglasses'*/];
     let pageCount = 1;
 
     for (let i in cards) {
+
         let cardElement = cards[i];
 
         if (namesOnly.length > 0) {
@@ -635,6 +637,8 @@ function saveImages(scaleFactor) {
         }
 
         fileNames.push(fileName);
+
+
 
         a2pClient.chromeHtmlToImage(cardElement.outerHTML, config)
             .then(function (result) {

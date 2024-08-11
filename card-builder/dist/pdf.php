@@ -64,7 +64,7 @@
             background-image: url("./extras/bg.png");
             background-size: cover;
             position: relative;
-            background-position: center center;
+            background-position: -320px center;
             overflow: hidden;
             filter: grayscale(100%);
         }
@@ -186,7 +186,7 @@
         }
 
         .page .rules {
-            width: 33.333%;
+            width: 33.335%;
             height: 33.333%;
             position: absolute;
             display: inline-block;
@@ -288,12 +288,8 @@
 <body>
 
 <?php
-$files = scandir('./cards');
-unset($files[count($files) - 1]);
-unset($files[2]);
-unset($files[1]);
-unset($files[0]);
-$count = 0;
+$fileList = file_get_contents('./cards/_fileNames.json');
+$files = json_decode($fileList, true);
 ?>
 
 <div class="page">
@@ -313,11 +309,12 @@ $count = 0;
             <p>A social cooperative <br>deckbuilding experience.</p>
             <p>2 to 4 young friends<br>protect their home<br>from the supernatural.</p>
             <p>Become an <span class="class athlete">athlete</span>, <span class="artist">artist</span>, <span class="musician">musician</span>, or <span class="inventor">inventor</span>.</p>
-            <br><br>
+            <br><br><br><br>
             Watch how to play!<br>
             Play the game! <br>
             Talk with us!<br>
-            <div class="domain">all at <span class="signature">Susberg</span>.com</div>
+            <div class="domain">all at&nbsp;<span class="signature">Susberg</span>.com</div>
+            <br><br>
         </div>
     </div>
 
