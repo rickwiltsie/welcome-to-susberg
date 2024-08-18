@@ -60,7 +60,7 @@
 
         .intro {
             width: 100%;
-            height:  calc(7in * .97);
+            height:  calc(7in * .95);
             background-image: url("./extras/bg.png");
             background-size: cover;
             position: relative;
@@ -76,7 +76,7 @@
             left: 0;
             top: 0;
             width: 100%;
-            height:  calc(7in * .97);
+            height:  calc(7in * .95);
             background: linear-gradient(to bottom,  rgba(245,245,245,0.9) 0%,rgba(245,245,245,0.9) 60%,rgba(245,245,245,1) 90%);
         }
 
@@ -157,12 +157,13 @@
         }
         .page {
             border: .08in solid black;
-            width: calc(7.5in * .97);
-            height:  calc(10.5in * .97);
+            width: calc(7.5in * .95);
+            height:  calc(10.5in * .95);
             position: relative;
             font-size: 0;
             background-color: #F5F5F5;
             overflow: hidden;
+            break-inside: avoid;
         }
 
         .page .credits {
@@ -171,7 +172,7 @@
             right: 0;
             font-size: 12px;
             font-family: 'Chalkboard';
-            width: calc(2.5in * .97);
+            width: calc(2.5in * .95);
             text-align: center;
         }
         .page .credits .name {
@@ -186,8 +187,8 @@
         }
 
         .page .rules {
-            width: 33.335%;
-            height: 33.333%;
+            width: 33%;
+            height: 33%;
             position: absolute;
             display: inline-block;
             overflow: hidden;
@@ -219,10 +220,10 @@
         }
         .page .rules img {
             position: absolute;
-            width: 104%;
-            height: 104%;
-            left: -2%;
-            top: -2%;
+            width: 105%;
+            height: 105%;
+            left: -2.5%;
+            top: -2.5%;
         }
         table {
             margin-bottom: 40px;
@@ -234,8 +235,8 @@
             position: relative;
         }
         img {
-            width: calc(2.5in * .97);
-            height:  calc(3.5in * .97);
+            width: calc(2.5in * .95);
+            height:  calc(3.5in * .95);
             vertical-align: top;
         }
         td div:nth-of-type(1) {
@@ -322,13 +323,13 @@ $files = json_decode($fileList, true);
         <img src="./extras/logo.png" alt="">
     </div>
 
-    <div class="rules left">
+    <div class="rules left" style="bottom: 0;">
         <img src="./cards/Page_1.png" />
     </div>
-    <div class="rules mid">
+    <div class="rules mid" style="bottom: 0;">
         <img src="./cards/Page_2.png" />
     </div>
-    <div class="rules right cover">
+    <div class="rules right cover" style="bottom: 0;">
         <img src="./cards/Page_3.png" />
     </div>
 </div>

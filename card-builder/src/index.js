@@ -524,7 +524,7 @@ function saveImagesButton(type = 'digital') {
 
                 setTimeout(function () {
                     if (type.toLowerCase() == 'digital') {
-                        saveImages(2);
+                        saveImages(1);
                     } else if (type.toLowerCase() == 'print') {
                         saveImages(5);
                     }
