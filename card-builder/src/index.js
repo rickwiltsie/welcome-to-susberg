@@ -169,7 +169,7 @@ function setCardData(spreadsheet)
         if (sheetName == 'LatestVersion') {
             storeCards(sheet.data[0].rowData);
 
-        } else if (sheetName == 'enemies') {
+        } else if (sheetName == 'Foes') {
             storeEnemies(sheet.data[0].rowData);
         }
 
@@ -197,6 +197,7 @@ function storeCards(rowData) {
         var card = rowData[iCard];
 
         let fin = card.values[1].formattedValue;
+
 
 
 
@@ -240,6 +241,8 @@ function storeCards(rowData) {
 }
 
 function storeEnemies(rowData) {
+
+    console.log('STORE ENEMIES', rowData);
     for(var iCard in rowData) {
 
         // skip first row for headers
@@ -256,7 +259,7 @@ function storeEnemies(rowData) {
 
         let fin = card.values[0].formattedValue;
 
-        if (fin > 0) {
+        if (fin > 0 || fin == 'n' || fin == 'x') {
             var storeCard = {
                 name: card.values[1].formattedValue ?? '',
                 art: card.values[2].formattedValue ?? '',
