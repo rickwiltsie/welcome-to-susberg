@@ -81,16 +81,16 @@
             <div class="card extra instruction athlete pattern-diagonal-stripes-md">
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
-                <div name="Athlete"></div>
+                <div name="The Athlete"></div>
                 <div class="rules">
                     <div>
                         <div class="explanation">
-                            <u>Trash:</u> Destroy cards, and remove them from the game.
+                            Athletes have the ability to trash cards, removing them from the game. Some cards even let them come back.
                         </div>
                     </div>
                     <div>
                         <div class="explanation">
-                            <u>Blocker:</u> Guards other players by giving them additional <span stat="blk"><span></span></span>
+                            Some athlete cards can give other players Block(<span stat="blk"><span></span></span>), protecting them when they are unable to themselves.
                         </div>
                     </div>
 
@@ -122,16 +122,16 @@
             <div class="card extra instruction artist pattern-triangles-md">
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
-                <div name="Artist"></div>
+                <div name="The Artist"></div>
                 <div class="rules">
                     <div>
                         <div class="explanation">
-                            <u>Stash:</u> Set a card aside to be used during a future turn.
+                            Some artist cards allow for cards to be stashed. This means that a card is set aside to be used on a later turn.
                         </div>
                     </div>
                     <div>
                         <div class="explanation">
-                            <u>Mixing:</u> Paint cards are mixed when there is more than one.
+                            When multiple cards with "paint" in the name are in play, they are mixed. Mixing allows additional effects.
                         </div>
                     </div>
 
@@ -164,16 +164,16 @@
             <div class="card extra instruction inventor pattern-checks-md">
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
-                <div name="Inventor"></div>
+                <div name="The Inventor"></div>
                 <div class="rules">
                     <div>
                         <div class="explanation">
-                            <u>Energy:</u> Score energy to power cards for the rest of the game.
+                            Inventors gain energy for the entire game, which unlocks extra card abilities once you reach a minimum amount.
                         </div>
                     </div>
                     <div>
                         <div class="explanation">
-                            <u>Repair:</u> Fix a card by putting it at the bottom of the deck.
+                            Some inventor cards can repair a card by putting it at the bottom of the owner's deck.
                         </div>
                     </div>
 
@@ -227,16 +227,18 @@
             <div class="card extra instruction musician pattern-zigzag-md">
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
-                <div name="Musician"></div>
+                <div name="The Musician"></div>
+
+
                 <div class="rules">
                     <div>
                         <div class="explanation">
-                            <u>Music:</u> Gain <span stat="msc"><span></span></span>&nbsp;that can then be spent for powerful effects.
+                            Some musician cards gain Music(<span stat="msc"><span></span></span>) which can then be spent for additional powerful effects.
                         </div>
                     </div>
                     <div>
                         <div class="explanation">
-                            <u>Inspire:</u> Allows players to draw additional cards.
+                            The musician inspires their friends by letting them draw extra cards, and a few more for themselves.
                         </div>
                     </div>
 
@@ -293,30 +295,38 @@
             <div class="card extra instruction blank enemy pattern-vertical-stripes-md">
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
-                <div name="Turn Overview"></div>
+                <div name="Turn Order"></div>
                 <div class="rules">
-                    <div class="icon">
-                        <div stat="pwr">
-                            <span></span>
-                        </div>
-                        <div class="definition">
-                            1) <u>Attack Phase</u><br>Combine Power to defeat foes.
-                        </div>
-                    </div>
-                    <div class="icon">
-                        <div stat="blk">
-                            <span></span>
-                        </div>
-                        <div class="definition">
-                            2) <u>Defense Phase</u><br>Defend from foes<br>using Block.
+
+
+                    <div>
+                        <div class="explanation">
+                            Players draw cards face up.
                         </div>
                     </div>
-                    <div class="icon">
-                        <div stat="lck">
-                            <span></span>
+                    <div>
+                        <div class="explanation">
+                            Draw foes until there are 3.
                         </div>
-                        <div class="definition">
-                            3) <u>Loot Phase</u><br>Spend Luck to<br>buy or draw a Loot.
+                    </div>
+                    <div>
+                        <div class="explanation">
+                            <u>Attack Phase</u>: Combine Power(<span stat="pwr"><span></span></span>) to defeat foes.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation">
+                            <u>Defense Phase</u>: Protect from foes using Block(<span stat="blk"><span></span></span>) .
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation">
+                            <u>Buy Phase</u>: Spend Coins(<span stat="lck"><span></span></span>) to buy or draw shop cards.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation">
+                            Return cards to your discard.
                         </div>
                     </div>
 
@@ -726,7 +736,7 @@
                     Rules 1
                 </div>
 
-                <div conjunction>and</div>
+                <div conjunction="and">and</div>
 
                 <div class='rule2'>
                     Rules 2
@@ -752,7 +762,7 @@
                     Rules 1
                 </div>
 
-                <div conjunction>or</div>
+                <div conjunction="or">or</div>
 
                 <div class='rule2'>
                     Long set of text to make it to exactly three lines.
@@ -778,11 +788,87 @@
                     Rules 1
                 </div>
 
-                <div conjunction>or</div>
+                <div conjunction></div>
 
                 <div class='rule2'>
                     Long set of text to make it to exactly three lines.
                 </div>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="card artist pattern-diagonal-stripes-md" key="X" count="">
+
+            <?php include 'print.php'; ?>
+
+            <div cost="2"><div></div></div>
+            <div class="image">
+                <img src="art/karate-gi.png">
+            </div>
+            <div name="Pallete"></div>
+            <div class="rules">
+
+                <div class='rule1'>
+                    Rules 1
+                </div>
+
+                <div conjunction="and">and</div>
+
+                <div class='rule2'>
+                    Long set of text to make it to exactly three lines.
+                </div>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="card artist pattern-diagonal-stripes-md" key="X" count="">
+
+            <?php include 'print.php'; ?>
+
+            <div cost="2"><div></div></div>
+            <div class="image">
+                <img src="art/karate-gi.png">
+            </div>
+            <div name="Pallete"></div>
+            <div class="rules">
+
+                <div class='rule1'>
+                    Rules 1
+                </div>
+
+                <div conjunction="8+ energy">energy</div>
+
+                <div class='rule2'>
+                    Long set of text to make it to exactly three lines.
+                </div>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="card artist pattern-diagonal-stripes-md" key="X" count="">
+
+            <?php include 'print.php'; ?>
+
+            <div cost="2"><div></div></div>
+            <div class="image">
+                <img src="art/karate-gi.png">
+            </div>
+            <div name="Pallete"></div>
+            <div class="rules">
+
+                <div class='rule1'>
+                    Rules 1
+                </div>
+
+                <div conjunction="or spend MSC"></div>
+
+                <div class="rule2">Spend a <span stat="msc"> <span></span> </span> for<br>other players to<br>draw a card.</div>
 
             </div>
         </div>
@@ -804,7 +890,7 @@
                     Do a thing.
                 </div>
             </div>
-            <div class="reward"></div>
+            <div class="reward"><span stat="lck"><span></span><span></span></span></div>
             <div level="3"></div>
         </div>
     </li>

@@ -87,10 +87,11 @@ span[stat=blk] span {
 div[stat=blk] span:before{
     width: .6in;
     height: .6in;
+    margin-left: -.04in;
 }
 span[stat=blk] span:before {
     width: .3in;
-    height: .3in
+    height: .3in;
 }
 
 
@@ -143,5 +144,6 @@ div[stat=msc] span:before{
 }
 span[stat=msc] span:before {
     width: .3in;
-    height: .3in
+    height: .3in;
+    margin-left: -.02in;
 }

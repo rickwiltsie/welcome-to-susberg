@@ -337,6 +337,7 @@ function showCards()
         } else {
             console.log(transformRules(card.conjunction));
             newCard.querySelector('div[conjunction]').innerHTML = card.conjunction ? transformRules(card.conjunction) : '';
+            newCard.querySelector('div[conjunction]').setAttribute('conjunction', card.conjunction);
         }
 
         if (card.rule2) {
