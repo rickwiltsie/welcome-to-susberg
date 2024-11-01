@@ -17,6 +17,10 @@
 
 <button id="save-images-button-print">Get Print Images</button>
 
+
+
+
+
 <ul id="cards-grid" class="grid">
     <li class="clone-source">
         <div class="card" key="X" count="">
@@ -882,9 +886,9 @@
             <div power="3"><div></div></div>
             <div health="4"><div></div></div>
             <div class="image">
-                <img src="monster/slime.png">
+                <img src="monster/karateka.png">
             </div>
-            <div name="Slimey"></div>
+            <div name="Dimensional Rift"></div>
             <div class="rules">
                 <div class="rule">
                     Do a thing.
@@ -896,6 +900,9 @@
     </li>
 
 </ul>
+
+
+
 
 
 

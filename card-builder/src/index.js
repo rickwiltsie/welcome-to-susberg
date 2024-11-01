@@ -134,6 +134,12 @@ window.onload = (event) => {
             saveImagesButton('print');
         }
     );
+
+    document.getElementById('save-report').addEventListener("click",
+        function() {
+            saveReport();
+        }
+    );
 };
 
 async function startApp()
@@ -717,4 +723,44 @@ function toDataURL(url, callback) {
     xhr.open('GET', url);
     xhr.responseType = 'blob';
     xhr.send();
+}
+
+
+function saveReport() {
+    zip = new JSZip();
+    let config = {
+        filename: 'test.pdf',
+        options: {
+            delay: 0,
+            puppeteerWaitForMethod: "WaitForNavigation",
+            puppeteerWaitForValue: "Load",
+            fullPage: false,
+            landscape: true,
+            marginTop: .1,
+            marginRight: .1,
+            marginBottom: .1,
+            marginLeft: .1,
+        }
+    };
+    let reportEl = document.querySelector('#report').outerHTML;
+    let fileName = 'test';
+
+    a2pClient.chromeHtmlToPdf(reportEl, config)
+    .then(function (result) {
+
+        console.log(result.FileUrl);
+            zip.file(fileName, urlToPromise(result.FileUrl), {binary: false});
+
+        }, function (rejected) {
+            console.log(rejected); //an error occurred
+        }
+
+    ).then(function() {
+        zip.generateAsync({type: "blob"})
+            .then(function callback(blob) {
+                console.log('saveAs');
+                // see FileSaver.js
+                saveAs(blob, "woah.zip");
+            });
+    });
 }
