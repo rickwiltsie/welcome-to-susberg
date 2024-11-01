@@ -824,3 +824,13 @@ button {
     right: 0;
     bottom: -.25in;
 }
+
+
+
+.card .bg {
+    position: absolute;
+    left: -4%;
+    top: -3%;
+    width: 110%;
+    height: 110%;
+}

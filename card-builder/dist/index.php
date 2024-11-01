@@ -24,6 +24,7 @@
 <ul id="cards-grid" class="grid">
     <li class="clone-source">
         <div class="card" key="X" count="">
+            <div class="bg"></div>
 
             <?php include 'print.php'; ?>
 
@@ -55,7 +56,8 @@
 
 <ul id="enemies-grid" class="grid">
     <li class="clone-source">
-        <div class="card enemy pattern-vertical-stripes-md">
+        <div class="card enemy">
+            <div class="bg pattern-vertical-stripes-md"></div>
 
             <?php include 'print.php'; ?>
 
@@ -82,7 +84,8 @@
 
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction athlete pattern-diagonal-stripes-md">
+            <div class="card extra instruction athlete">
+                <div class="bg pattern-diagonal-stripes-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div name="The Athlete"></div>
@@ -104,7 +107,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction athlete pattern-diagonal-stripes-md">
+            <div class="card extra instruction athlete">
+                <div class="bg pattern-diagonal-stripes-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div class="rules tracker">
@@ -123,7 +127,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction artist pattern-triangles-md">
+            <div class="card extra instruction artist">
+                <div class="bg pattern-triangles-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div name="The Artist"></div>
@@ -145,7 +150,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction artist pattern-triangles-md">
+            <div class="card extra instruction artist">
+                <div class="bg pattern-triangles-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div class="rules tracker">
@@ -165,7 +171,8 @@
 
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction inventor pattern-checks-md">
+            <div class="card extra instruction inventor">
+                <div class="bg pattern-checks-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div name="The Inventor"></div>
@@ -187,7 +194,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction inventor pattern-checks-md">
+            <div class="card extra instruction inventor">
+                <div class="bg pattern-checks-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div class="rules tracker">
@@ -206,7 +214,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction inventor pattern-checks-md">
+            <div class="card extra instruction inventor">
+                <div class="bg pattern-checks-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div class="rules energy">
@@ -228,7 +237,8 @@
 
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction musician pattern-zigzag-md">
+            <div class="card extra instruction musician">
+                <div class="bg pattern-zigzag-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div name="The Musician"></div>
@@ -252,7 +262,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction musician pattern-zigzag-md">
+            <div class="card extra instruction musician">
+                <div class="bg pattern-zigzag-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div class="rules tracker">
@@ -271,7 +282,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction musician pattern-zigzag-md">
+            <div class="card extra instruction musician">
+                <div class="bg pattern-zigzag-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div class="rules tracker">
@@ -296,7 +308,8 @@
 
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction blank enemy pattern-vertical-stripes-md">
+            <div class="card extra instruction blank enemy">
+                <div class="bg pattern-vertical-stripes-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
                 <div name="Turn Order"></div>
@@ -340,7 +353,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra athlete pattern-diagonal-stripes-md">
+            <div class="card card-back extra athlete">
+                <div class="bg pattern-diagonal-stripes-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="first logo" alt=""></div>
                 <div class="second logo" alt=""></div>
@@ -349,7 +363,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra artist pattern-triangles-md">
+            <div class="card card-back extra artist">
+                <div class="bg pattern-triangles-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="first logo" alt=""></div>
                 <div class="second logo" alt=""></div>
@@ -358,7 +373,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra inventor pattern-checks-md">
+            <div class="card card-back extra inventor">
+                <div class="bg pattern-checks-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="first logo" alt=""></div>
                 <div class="second logo" alt=""></div>
@@ -367,7 +383,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra musician pattern-zigzag-md">
+            <div class="card card-back extra musician">
+                <div class="bg pattern-zigzag-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="first logo" alt=""></div>
                 <div class="second logo" alt=""></div>
@@ -376,7 +393,8 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra enemy pattern-vertical-stripes-md">
+            <div class="card card-back extra enemy">
+                <div class="bg pattern-vertical-stripes-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="first logo" alt=""></div>
                 <div class="second logo" alt=""></div>
@@ -702,7 +720,8 @@
 
 
     <li>
-        <div class="card athlete pattern-diagonal-stripes-md" key="X" count="">
+        <div class="card athlete" key="X" count="">
+            <div class="bg pattern-diagonal-stripes-md"></div>
 
             <?php include 'print.php'; ?>
 
@@ -725,7 +744,8 @@
 
 
     <li>
-        <div class="card athlete pattern-diagonal-stripes-md" key="X" count="">
+        <div class="card musician" key="X" count="">
+            <div class="bg pattern-zigzag-md"></div>
 
             <?php include 'print.php'; ?>
 
@@ -751,7 +771,8 @@
     </li>
 
     <li>
-        <div class="card artist pattern-diagonal-stripes-md" key="X" count="">
+        <div class="card inventor" key="X" count="">
+            <div class="bg pattern-checks-md"></div>
 
             <?php include 'print.php'; ?>
 
@@ -777,7 +798,8 @@
     </li>
 
     <li>
-        <div class="card artist pattern-diagonal-stripes-md" key="X" count="">
+        <div class="card artist" key="X" count="">
+            <div class="bg pattern-triangles-md"></div>
 
             <?php include 'print.php'; ?>
 
@@ -803,7 +825,8 @@
     </li>
 
     <li>
-        <div class="card artist pattern-diagonal-stripes-md" key="X" count="">
+        <div class="card artist" key="X" count="">
+            <div class="bg pattern-diagonal-stripes-md"></div>
 
             <?php include 'print.php'; ?>
 
@@ -829,7 +852,8 @@
     </li>
 
     <li>
-        <div class="card artist pattern-diagonal-stripes-md" key="X" count="">
+        <div class="card artist" key="X" count="">
+            <div class="bg pattern-diagonal-stripes-md"></div>
 
             <?php include 'print.php'; ?>
 
@@ -855,7 +879,8 @@
     </li>
 
     <li>
-        <div class="card artist pattern-diagonal-stripes-md" key="X" count="">
+        <div class="card artist" key="X" count="">
+            <div class="bg pattern-diagonal-stripes-md"></div>
 
             <?php include 'print.php'; ?>
 
@@ -879,7 +904,8 @@
     </li>
 
     <li>
-        <div class="card enemy pattern-vertical-stripes-md">
+        <div class="card enemy">
+            <div class="bg pattern-vertical-stripes-md"></div>
 
             <?php include 'print.php'; ?>
 

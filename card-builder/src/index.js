@@ -309,7 +309,7 @@ function showCards()
         }
 
         newCard.classList.add(style[0]);
-        newCard.classList.add(style[1]);
+        newCard.querySelector('div.bg').classList.add(style[1]);
 
         newCard.querySelector('div[name]').setAttribute('name', card.name);
 
