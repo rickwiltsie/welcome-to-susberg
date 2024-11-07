@@ -574,7 +574,7 @@
             <div class="image">
                 <img src="art/karate-gi.png">
             </div>
-            <div name="Pallete"></div>
+            <div name="Test"><span>Test</span></div>
             <div class="rules">
 
                 <div class='rule1'>
@@ -627,7 +627,7 @@
             <div class="image">
                 <img src="monster/karateka.png">
             </div>
-            <div name="Dimensional Rift"></div>
+            <div name="Dimensional Rift"><span>Dimensional Rift</span></div>
             <div class="rules">
                 <div class="rule">
                     Do a thing.

@@ -312,6 +312,7 @@ function showCards()
         newCard.querySelector('div.bg').classList.add(style[1]);
 
         newCard.querySelector('div[name]').setAttribute('name', card.name);
+        newCard.querySelector('div[name]').innerHTML = '<span>'+card.name+'</span>';
 
         if (card.cost) {
             newCard.querySelector('div[cost]').setAttribute('cost', card.cost);
@@ -376,6 +377,7 @@ function showEnemies()
         let newCard = newItem.querySelector('.card');
 
         newCard.querySelector('div[name]').setAttribute('name', card.name);
+        newCard.querySelector('div[name]').innerHTML = '<span>'+card.name+'</span>';
 
         if (card.power) {
             newCard.querySelector('div[power]').setAttribute('power', card.power);
@@ -517,33 +519,16 @@ let fileNames = [];
 function saveImagesButton(type = 'digital') {
     console.log(type);
 
-    // convert rule images to base64
-    let ruleImages = document.querySelectorAll('img.rule-image');
-    let imageCount = ruleImages.length;
-    let imagesSet = 0;
-    for (let i in ruleImages) {
-        let ruleImage = ruleImages[i];
-        if (typeof ruleImage === 'object') {
-            let imageSrc = ruleImage.getAttribute('src');
-            toDataURL(imageSrc, function(dataUrl) {
-                ruleImage.setAttribute('src', dataUrl);
-            });
-
-            imagesSet++;
-            if (imagesSet >= imageCount) {
-
-                setTimeout(function () {
-                    if (type.toLowerCase() == 'digital') {
-                        saveImages(1);
-                    } else if (type.toLowerCase() == 'print') {
-                        saveImages(5);
-                    }
-                }, 1000);
 
 
-            }
+
+    setTimeout(function () {
+        if (type.toLowerCase() == 'digital') {
+            saveImages(1.5);
+        } else if (type.toLowerCase() == 'print') {
+            saveImages(5);
         }
-    }
+    }, 1000);
 
 
 
@@ -607,7 +592,8 @@ function saveImages(scaleFactor) {
         };
 
         cardElement.classList.add('api2pdf');
-        cardElement.classList.add('scale-'+scaleFactor);
+        let scaleString = scaleFactor.toString().replaceAll('.', '-') ;
+        cardElement.classList.add('scale-'+scaleString);
 
         let fileName = '';
 

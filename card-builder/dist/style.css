@@ -273,6 +273,22 @@ div[name] {
     border-top: .05in black solid;
     z-index: 1;
 }
+div[name] span {
+    font-family: happylucky;
+    position: absolute;
+    top: -.13in;
+    left: 0;
+    right: 0;
+    content: attr(name);
+    width: 100%;
+    color: black;
+    font-size: 18pt;
+    letter-spacing: 1pt;
+    line-height: 24pt;
+    text-align: center;
+    -webkit-text-stroke: 3pt black;
+
+}
 div[name]:before {
     font-family: happylucky;
     position: absolute;
@@ -475,34 +491,53 @@ div.enemy div[name]:after {
     border-top: .05in black solid;
     z-index: 1;
 }
-.enemy div[name]:before {
+.enemy div[name] span {
+
+
     font-family: happylucky;
     position: absolute;
-    top: -.15in;
+    top: auto !important;
     left: 0;
     right: 0;
     content: attr(name);
     width: 100%;
-    color: black;
-    font-size: 24pt;
+    font-size: 24pt !important;
+    letter-spacing: 1pt;
+    line-height: 0;
+    text-align: center;
+    -webkit-text-stroke: 5pt black;
+    z-index: 1;
+
+}
+.enemy div[name]:before {
+    font-family: happylucky;
+    position: absolute;
+    top: -.165in;
+    left: 0;
+    right: 0;
+    content: attr(name);
+    width: 100%;
+    font-size: 24pt !important;
     letter-spacing: 1pt;
     line-height: 24pt;
     text-align: center;
-    -webkit-text-stroke: 5pt black;
+    -webkit-text-stroke: 3pt black;
+    z-index: 1;
 }
 .enemy div[name]:after {
     font-family: happylucky;
     position: absolute;
-    top: -.15in;
+    top: -.165in;
     left: 0;
     right: 0;
     content: attr(name);
     width: 100%;
     color: rgba(230,230,230,1);
-    font-size: 24pt;
+    font-size: 24pt !important;
     letter-spacing: 1pt;
     line-height: 24pt;
     text-align: center;
+    z-index: 2;
 }
 
 
@@ -644,6 +679,9 @@ button {
 /* change scale() to match print size */
 .card.api2pdf {
     transform-origin: top left;
+}
+.card.api2pdf.scale-1-5 {
+    transform: scale(1.5);
 }
 .card.api2pdf.scale-2 {
     transform: scale(2);
