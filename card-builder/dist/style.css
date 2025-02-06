@@ -364,12 +364,13 @@ div.enemy div[name]:after {
     word-break: keep-all;
     flex-shrink: 0;
     align-items: center;
+    position: relative;
 }
 .rules > div[conjunction] span {
     flex-shrink: 0;
     text-align: center;
+    background-color: red;
 }
-.rules > div[conjunction]:empty:after { display: none; }
 .rules > div[conjunction]:before {
     content: '';
     display: block;
@@ -378,7 +379,22 @@ div.enemy div[name]:after {
     width: 100%;
 }
 .rules > div[conjunction="or"]:before {
-    display: none;
+    position: absolute;
+    top: .15in;
+    border-top: .025in solid black;
+    display: block;
+    width: 15%;
+    left: 28%;
+}
+.rules > div[conjunction="or"]:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: .15in;
+    border-top: .025in solid black;
+    display: block;
+    width: 15%;
+    right: 28%;
 }
 
 .athlete {
