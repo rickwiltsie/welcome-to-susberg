@@ -23,30 +23,32 @@
 
 <ul id="cards-grid" class="grid">
     <li class="clone-source">
-        <div class="card" key="X" count="">
-            <div class="bg"></div>
+        <div class="wrapper">
+            <div class="card" key="X" count="">
+                <div class="bg"></div>
 
-            <?php include 'print.php'; ?>
+                <?php include 'print.php'; ?>
 
-            <div cost="4"><div></div></div>
-            <div class="image">
-                <img src="">
-            </div>
-            <div name="Test Name"></div>
-            <div class="rules">
-
-                <div class='rule1'>
-                    Rules 1
+                <div cost="4"><div></div></div>
+                <div class="image">
+                    <img src="">
                 </div>
+                <div name="Test Name"></div>
+                <div class="rules">
 
-                <div conjunction></div>
+                    <div class='rule1'>
+                        Rules 1
+                    </div>
 
-                <div class='rule2'>
-                    Rules 2
+                    <div conjunction></div>
+
+                    <div class='rule2'>
+                        Rules 2
+                    </div>
+
                 </div>
-
+                <div class="only-in-2player">Only use in 2 player games</div>
             </div>
-            <div class="only-in-2player">Only use in 2 player games</div>
         </div>
     </li>
 </ul>
@@ -56,23 +58,25 @@
 
 <ul id="enemies-grid" class="grid">
     <li class="clone-source">
-        <div class="card enemy">
-            <div class="bg pattern-vertical-stripes-md"></div>
+        <div class="wrapper">
+            <div class="card enemy">
+                <div class="bg pattern-vertical-stripes-md"></div>
 
-            <?php include 'print.php'; ?>
+                <?php include 'print.php'; ?>
 
-            <div power=""><div></div></div>
-            <div health=""><div></div></div>
-            <div class="image">
-                <img src="">
-            </div>
-            <div name></div>
-            <div class="rules">
-                <div class="rule">
+                <div power=""><div></div></div>
+                <div health=""><div></div></div>
+                <div class="image">
+                    <img src="">
                 </div>
+                <div name></div>
+                <div class="rules">
+                    <div class="rule">
+                    </div>
+                </div>
+                <div class="reward"></div>
+                <div level=""></div>
             </div>
-            <div class="reward"></div>
-            <div level=""></div>
         </div>
     </li>
 </ul>
@@ -625,12 +629,78 @@
             <div power="3"><div></div></div>
             <div health="4"><div></div></div>
             <div class="image">
-                <img src="monster/karateka.png">
+                <img src="monster/_nuhuh.webp">
             </div>
-            <div name="Dimensional Rift"><span>Dimensional Rift</span></div>
+            <div name="Nuh Uh"><span>Nuh Uh</span></div>
             <div class="rules">
                 <div class="rule">
-                    Do a thing.
+                    If all players yell "Yuh Huh!" this is defeated.
+                </div>
+            </div>
+            <div class="reward"><span stat="lck"><span></span><span></span></span></div>
+            <div level="3"></div>
+        </div>
+    </li>
+
+    <li>
+        <div class="card enemy">
+            <div class="bg pattern-vertical-stripes-md"></div>
+
+            <?php include 'print.php'; ?>
+
+            <div power="3"><div></div></div>
+            <div health="4"><div></div></div>
+            <div class="image">
+                <img src="monster/_samsonite.webp">
+            </div>
+            <div name="Uncle Samsonite"><span>Uncle Samsonite</span></div>
+            <div class="rules">
+                <div class="rule">
+                    If you hold<br>Cola Espuma near<br>this it is defeated.
+                </div>
+            </div>
+            <div class="reward"><span stat="lck"><span></span><span></span></span></div>
+            <div level="3"></div>
+        </div>
+    </li>
+
+    <li>
+        <div class="card enemy">
+            <div class="bg pattern-vertical-stripes-md"></div>
+
+            <?php include 'print.php'; ?>
+
+            <div power="3"><div></div></div>
+            <div health="4"><div></div></div>
+            <div class="image">
+                <img src="monster/_espuma.webp">
+            </div>
+            <div name="Cola Espuma"><span>Cola Espuma</span></div>
+            <div class="rules">
+                <div class="rule">
+                    This is defetaed<br>when held near<br>Uncle Samsonite.
+                </div>
+            </div>
+            <div class="reward"><span stat="lck"><span></span><span></span></span></div>
+            <div level="3"></div>
+        </div>
+    </li>
+
+    <li>
+        <div class="card enemy">
+            <div class="bg pattern-vertical-stripes-md"></div>
+
+            <?php include 'print.php'; ?>
+
+            <div power="3"><div></div></div>
+            <div health="4"><div></div></div>
+            <div class="image">
+                <img src="monster/_mlg.jpg">
+            </div>
+            <div name="MLG"><span>MLG</span></div>
+            <div class="rules">
+                <div class="rule">
+                    This card can bounce from enemy to enemy when it attacks. It gives Health.
                 </div>
             </div>
             <div class="reward"><span stat="lck"><span></span><span></span></span></div>

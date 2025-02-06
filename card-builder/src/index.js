@@ -524,9 +524,9 @@ function saveImagesButton(type = 'digital') {
 
     setTimeout(function () {
         if (type.toLowerCase() == 'digital') {
-            saveImages(1.5);
+            saveImages(3);
         } else if (type.toLowerCase() == 'print') {
-            saveImages(5);
+            saveImages('print');
         }
     }, 1000);
 
@@ -539,6 +539,7 @@ function saveImages(scaleFactor) {
 
 
     console.log('start save');
+
 
 
 
@@ -559,12 +560,23 @@ function saveImages(scaleFactor) {
     cardCount = cards.length;
     let currentExtra = 1;
 
-    let namesOnly = [/*'hairspray', 'sunglasses'*/];
+    let namesOnly = ['rattling skeleton'];
     let pageCount = 1;
 
     for (let i in cards) {
 
         let cardElement = cards[i];
+
+
+        if (scaleFactor == 'print') {
+            cardElement.parentElement.classList.add('print-ltt');
+
+        } else {
+            cardElement.parentElement.style.transform = 'scale('+scaleFactor+')';
+
+        }
+
+        cardElement.parentElement.classList.add('api2pdf');
 
         if (namesOnly.length > 0) {
             let cardNameEl = cardElement?.querySelector('*[name]');
@@ -576,6 +588,12 @@ function saveImages(scaleFactor) {
             }
         }
 
+        console.log({
+            width: Math.ceil(cardElement.parentElement.getBoundingClientRect().width),
+            height: Math.ceil(cardElement.parentElement.getBoundingClientRect().height),
+            deviceScaleFactor: 1
+        });
+
         let config = {
             filename: 'test.png',
             options: {
@@ -584,16 +602,14 @@ function saveImages(scaleFactor) {
                 puppeteerWaitForValue: "Load",
                 fullPage: false,
                 viewPortOptions: {
-                    width: 240 * scaleFactor,
-                    height: 336 * scaleFactor,
-                    deviceScaleFactor: 2
+                    width: Math.ceil(cardElement.parentElement.getBoundingClientRect().width),
+                    height: Math.ceil(cardElement.parentElement.getBoundingClientRect().height),
+                    deviceScaleFactor: 1
                 }
             }
         };
 
-        cardElement.classList.add('api2pdf');
-        let scaleString = scaleFactor.toString().replaceAll('.', '-') ;
-        cardElement.classList.add('scale-'+scaleString);
+
 
         let fileName = '';
 
@@ -635,8 +651,7 @@ function saveImages(scaleFactor) {
         fileNames.push(fileName);
 
 
-
-        a2pClient.chromeHtmlToImage(cardElement.outerHTML, config)
+        a2pClient.chromeHtmlToImage(cardElement.parentElement.outerHTML, config)
             .then(function (result) {
 
                     zip.file(fileName, urlToPromise(result.FileUrl), {binary: true})
@@ -647,7 +662,8 @@ function saveImages(scaleFactor) {
             ).then(function() {
             checkSave();
         });
-        cardElement.classList.remove('api2pdf');
+
+        cardElement.parentElement.classList.remove('print-ltt');
     }
 
 

@@ -465,8 +465,8 @@ div.enemy div[name]:after {
 }
 .enemy .image {
     text-align: center;
-    width: 1.6in;
-    height: 1.6in;
+    width: 1.625in;
+    height: 1.625in;
     position: relative;
 }
 .enemy .image img {
@@ -501,7 +501,7 @@ div.enemy div[name]:after {
     right: 0;
     content: attr(name);
     width: 100%;
-    font-size: 24pt !important;
+    font-size: 22pt !important;
     letter-spacing: 1pt;
     line-height: 0;
     text-align: center;
@@ -517,7 +517,7 @@ div.enemy div[name]:after {
     right: 0;
     content: attr(name);
     width: 100%;
-    font-size: 24pt !important;
+    font-size: 22pt !important;
     letter-spacing: 1pt;
     line-height: 24pt;
     text-align: center;
@@ -533,7 +533,7 @@ div.enemy div[name]:after {
     content: attr(name);
     width: 100%;
     color: rgba(230,230,230,1);
-    font-size: 24pt !important;
+    font-size: 22pt !important;
     letter-spacing: 1pt;
     line-height: 24pt;
     text-align: center;
@@ -673,28 +673,6 @@ button {
 
 
 
-
-
-
-/* change scale() to match print size */
-.card.api2pdf {
-    transform-origin: top left;
-}
-.card.api2pdf.scale-1-5 {
-    transform: scale(1.5);
-}
-.card.api2pdf.scale-2 {
-    transform: scale(2);
-}
-.card.api2pdf.scale-3 {
-    transform: scale(3);
-}
-.card.api2pdf.scale-4 {
-    transform: scale(4);
-}
-.card.api2pdf.scale-5 {
-    transform: scale(5);
-}
 
 .rules.energy {
     top: 0;
@@ -871,4 +849,19 @@ button {
     top: -3%;
     width: 110%;
     height: 110%;
+}
+
+.wrapper {
+    transform-origin: top left;
+
+}
+
+.print-ltt {
+    background-color: black;
+    transform-origin: top left;
+    border-left: 21px solid black;
+    border-right: 21px solid black;
+    border-top: 24.5px solid black;
+    border-bottom: 25px solid black;
+    transform: scale(2.905);
 }

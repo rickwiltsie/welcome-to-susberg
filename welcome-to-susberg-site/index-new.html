@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Susberg</title>
+
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3DS7Z4Q8H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K3DS7Z4Q8H');
+    </script>
+
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #E8E8E8;
+        }
+        .town-of-susberg {
+            background-image: url('assets/images/town-of-susberg.png');
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        .town-of-susberg-dark {
+            background-image: url('assets/images/town-of-susberg-dark.png');
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        .artist {
+            background-color: rgba(0,175,200,1);
+            color: rgba(0,125,150,1);
+        }
+        .musician {
+            background-color: rgba(0,200,0,1);
+            color: rgba(0,150,0,1);
+        }
+        .inventor {
+            background-color: rgba(175,0,200,1);
+            color: rgba(125,0,150,1);
+        }
+        .athlete {
+            background-color: rgba(200,0,0,1);
+            color: rgba(150,0,0,1);
+        }
+        .foe {
+            background-color: rgba(125,125,125,1);
+            color: rgba(150,150,150,1);
+        }
+        .athlete::after,
+        .artist::after,
+        .inventor::after,
+        .musician::after,
+        .foe::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.5);
+        }
+
+
+        .red-section {
+            background-color: #FAE1E0;
+        }
+        .blue-section {
+            background-color: #C8E1FA;
+        }
+        .green-section {
+            background-color: #C8FAE1;
+        }
+        .purple-section {
+            background-color: #E1C8FA;
+        }
+
+    </style>
+</head>
+<body class="font-sans text-base">
+
+<div class="container relative bg-white mx-auto max-w-[1100px] sm:grid sm:grid-cols-6">
+
+    <div class="relative col-span-6 h-[50vh] town-of-susberg pl-[50%]">
+        <img src="assets/images/foe-logo.png" class="w-[40%] absolute bottom-0 left-4">
+
+        <ul>
+            <li>Easy to learn rules with strategic depth</li>
+            <li>Multiplayer problem solving</li>
+            <li>Distinct characters with unique playstyles</li>
+            <li>Random enemy decks for unlimited replays</li>
+            <li>Multiple difficulties for experienced players</li>
+            <li>Abundance of the strange and silly</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="red-section py-10 px-5">
+    <div class="container relative mx-auto max-w-[1100px] sm:grid sm:grid-cols-6">
+
+        <div class="relative col-span-6">
+
+            <ul>
+                <li>Easy to learn rules with strategic depth</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="blue-section">
+    <div class="container relative mx-auto max-w-[1100px] sm:grid sm:grid-cols-6">
+
+        <div class="relative col-span-6">
+
+            <ul>
+                <li>Easy to learn rules with strategic depth</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="green-section">
+    <div class="container relative mx-auto max-w-[1100px] sm:grid sm:grid-cols-6">
+
+        <div class="relative col-span-6">
+
+            <ul>
+                <li>Easy to learn rules with strategic depth</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="purple-section">
+    <div class="container relative mx-auto max-w-[1100px] sm:grid sm:grid-cols-6">
+
+        <div class="relative col-span-6">
+
+            <ul>
+                <li>Easy to learn rules with strategic depth</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+        <!--
+
+        <div class="relative col-span-6 h-[50vh] pattern-vertical-stripes-md foe">
+            Easy to learn rules with strategic depth
+            Multiplayer problem solving
+            Distinct characters with unique playstyles
+            Random enemy decks for unlimited replays
+            Multiple difficulties for experienced players
+            Abundance of the strange and silly
+        </div>
+
+
+
+        <div class="relative col-span-6 h-[50vh] pattern-diagonal-stripes-md athlete">
+            Easy to learn rules with strategic depth
+            Multiplayer problem solving
+            Distinct characters with unique playstyles
+            Random enemy decks for unlimited replays
+            Multiple difficulties for experienced players
+            Abundance of the strange and silly
+        </div>
+
+        <div class="relative col-span-6 h-[50vh] pattern-triangles-md artist">
+            Include product image on right side
+        </div>
+
+        <div class="relative col-span-6 h-[50vh] pattern-checks-md inventor">
+            Include product image on right side
+        </div>
+
+        <div class="relative col-span-6 h-[50vh] pattern-zigzag-md musician">
+            Include product image on right side
+        </div>
+
+        <div class="col-span-6 p-8 text-center font-serif text-7xl border-b border-[#D1CECE] bg-white text-[#52515D]">
+            <h1>Keep Susberg Strange</h1>
+        </div>
+        <div class="col-span-4 p-8 columns-2 font-serif gap-8 text-lg bg-white text-[#52515D]">
+
+            <img src="assets/images/photo-yeti.png" class="mb-2" alt="">
+
+            <h2 class="font-bold text-xl">The Susberg Yeti: A Friendly Monster or a Warning?</h2>
+            <p class="italic mb-2">By Myrtle Wexley</p>
+
+            <p class="mb-2">The Susberg Yeti has made another appearance, but this time, its presence feels more ominous. A visiting photographer captured the creature lurking behind a log cabin on Pinebend Trail. Massive and snow-white, its curved horns and piercing eyes give it an almost otherworldly air.</p>
+
+            <p class="mb-2">While the yeti didn’t display outright aggression, its sheer size and proximity to the cabin are enough to raise eyebrows—and alarms. Witnesses reported it watching intently, and some say they heard a deep, rumbling growl that shook the air.</p>
+
+            <p class="mb-2">Is this a warning to stay out of the forest? One thing’s certain: the Susberg Yeti isn’t just folklore—it’s real, and it’s watching.</p>
+
+            <p class="mb-2 font-bold">Keep Susberg Strange, and maybe keep your distance.</p>
+        </div>
+
+        <div class="col-span-2 p-8 font-serif text-lg border-l border-[#D1CECE] bg-white text-[#52515D]">
+
+            <p>
+                <h2 class="font-bold text-xl">Join the Keep Susberg Strange Newsletter</h2>
+                Keep up on the latest news, and information about the upcoming deckbuilder, Welcome to Susberg.
+                <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+                <form action="https://app.convertkit.com/forms/6974087/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="6974087" data-uid="e9a73ca940" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800">
+                    <div data-style="clean">
+                        <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                        <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                            <div class="formkit-field">
+                                <input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required="" type="email" style="color: rgb(0, 0, 0); border-color: rgb(255, 255, 255); border-radius: 4px; font-weight: 400;">
+                            </div>
+                            <button data-element="submit" class="formkit-submit formkit-submit" style="color: rgb(255, 255, 255); background-color: rgb(22, 119, 190); border-radius: 4px; font-weight: 400;">
+                                <div class="formkit-spinner">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <span class="">Subscribe</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </p>
+        </div>
+
+
+        <div class="relative col-span-6 h-[50vh] town-of-susberg-dark">
+        </div>
+
+        -->

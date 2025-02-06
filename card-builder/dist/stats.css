@@ -76,7 +76,7 @@ span[stat=blk] {
     padding-right: .06in;
 }
 *[stat=blk] span:before{
-    transform: rotate(4deg);
+    transform: rotate(10deg);
 }
 div[stat=blk] span {
     width: .3in;
