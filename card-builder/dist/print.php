@@ -90,6 +90,19 @@
     }
 
     <?php
+    $path = './stats/energy.png';
+    $type = pathinfo($path, PATHINFO_EXTENSION);
+    $data = file_get_contents($path);
+    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+    ?>
+    *[stat=eng] span:before{
+        background-image: url(<?=$base64 ?>);
+    }
+    .inventor .tracker.energy div[health] > div:before {
+        background-image: url(<?=$base64 ?>);
+    }
+
+    <?php
     $path = './stats/health.png';
     $type = pathinfo($path, PATHINFO_EXTENSION);
     $data = file_get_contents($path);

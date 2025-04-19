@@ -24,7 +24,7 @@
 <ul id="cards-grid" class="grid">
     <li class="clone-source">
         <div class="wrapper">
-            <div class="card" key="X" count="">
+            <div class="card" key="X" counat="">
                 <div class="bg"></div>
 
                 <?php include 'print.php'; ?>
@@ -76,6 +76,9 @@
                 </div>
                 <div class="reward"></div>
                 <div level=""></div>
+                <div class="set">
+                    <img src="extras/exp-ks.png">
+                </div>
             </div>
         </div>
     </li>
@@ -96,12 +99,12 @@
                 <div class="rules">
                     <div>
                         <div class="explanation">
-                            Athletes have the ability to trash cards, removing them from the game. Some cards even let them come back.
+                            Athletes have the ability to trash cards, removing them from the game. Some cards even allow them to come back with powerful effects.
                         </div>
                     </div>
                     <div>
                         <div class="explanation">
-                            Some athlete cards can give other players Block(<span stat="blk"><span></span></span>), protecting them when they are unable to themselves.
+                            Some athlete cards can give other players Block <span stat="blk"><span></span></span>, protecting them when they are unable to protect themselves.
                         </div>
                     </div>
 
@@ -111,7 +114,7 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction athlete">
+            <div class="card card-back extra instruction athlete">
                 <div class="bg pattern-diagonal-stripes-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
@@ -144,7 +147,7 @@
                     </div>
                     <div>
                         <div class="explanation">
-                            When multiple cards with "paint" in the name are in play, they are mixed. Mixing allows additional effects.
+                            When multiple cards with "paint" in the name are in play, they are mixed. Mixing allows for additional powerful effects.
                         </div>
                     </div>
 
@@ -154,7 +157,7 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction artist">
+            <div class="card card-back extra instruction artist">
                 <div class="bg pattern-triangles-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
@@ -183,12 +186,12 @@
                 <div class="rules">
                     <div>
                         <div class="explanation">
-                            Inventors gain energy for the entire game, which unlocks extra card abilities once you reach a minimum amount.
+                            Inventors gain Energy <span stat="eng"><span></span></span> for the entire game, which unlocks extra card abilities once you reach a minimum amount.
                         </div>
                     </div>
                     <div>
                         <div class="explanation">
-                            Some inventor cards can repair a card by putting it at the bottom of the owner's deck.
+                            Inventor cards can tinker a deck by letting the player look at the top card and either keep it there or discard it.
                         </div>
                     </div>
 
@@ -198,7 +201,7 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction inventor">
+            <div class="card card-back extra instruction inventor">
                 <div class="bg pattern-checks-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
@@ -218,19 +221,23 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction inventor">
+            <div class="card card-back extra instruction inventor">
                 <div class="bg pattern-checks-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
-                <div class="rules energy">
-                    <div>1 Energy</div>
-                    <div>2 Energy</div>
-                    <div>3 Energy</div>
-                    <div>4 Energy</div>
-                    <div>5 Energy</div>
-                    <div>6 Energy</div>
-                    <div>7 Energy</div>
-                    <div>8 Energy</div>
+                <div class="rules tracker energy">
+                    <div>
+                        <div>
+                            <div health="" class="energy"><div></div></div>
+                            <div health="" class="energy"><div></div></div>
+                            <div health="" class="energy"><div></div></div>
+                            <div health="" class="energy"><div></div></div>
+                            <div health="" class="energy"><div></div></div>
+                            <div health="" class="energy"><div></div></div>
+                            <div health="" class="energy"><div></div></div>
+                            <div health="" class="energy"><div></div></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -251,7 +258,7 @@
                 <div class="rules">
                     <div>
                         <div class="explanation">
-                            Some musician cards gain Music(<span stat="msc"><span></span></span>) which can then be spent for additional powerful effects.
+                            Some musician cards gain Music <span stat="msc"><span></span></span> which can then be spent for additional powerful effects.
                         </div>
                     </div>
                     <div>
@@ -259,14 +266,13 @@
                             The musician inspires their friends by letting them draw extra cards, and a few more for themselves.
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction musician">
+            <div class="card card-back extra instruction musician">
                 <div class="bg pattern-zigzag-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
@@ -286,7 +292,7 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card extra instruction musician">
+            <div class="card card-back extra instruction musician">
                 <div class="bg pattern-zigzag-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
@@ -306,7 +312,67 @@
     </li>
 
 
+    <li>
+        <div class="wrapper" id="api-test">
+            <div class="card extra instruction blank enemy">
+                <div class="bg pattern-vertical-stripes-md"></div>
+                <?php include 'print.php'; ?>
+                <div class="image"></div>
 
+                <div class="rules full">
+                    <div>
+                        <div class="explanation small">
+                            Be kind and encouraging to one another.<br> Remember... you're in this together.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation">
+                            <strong>Card Rules</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation small">
+                            Players draw five cards in a 2 player game. With 3-4 players, draw four.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation small">
+                            Some cards have more than one effect. Both can be used once during a turn.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation small">
+                            Player cards may refer to "a card". That is a card in play, and owned by that player.
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <div class="explanation">
+                            <strong>Foe Rules</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation small">
+                            If a foe says to do something, it refers to all players.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation small">
+                            When foes are drawn and defeated, players decide the order it happens.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation small">
+                            When rules say "a card" that means a card in play, owned by that player.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </li>
 
 
 
@@ -316,38 +382,46 @@
                 <div class="bg pattern-vertical-stripes-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
-                <div name="Turn Order"></div>
-                <div class="rules">
-
-
+                <div class="rules full">
                     <div>
                         <div class="explanation">
-                            Players draw cards face up.
+                            <strong>Turn Order</strong>
                         </div>
                     </div>
                     <div>
-                        <div class="explanation">
-                            Draw foes until there are 3.
+                        <div class="explanation small">
+                            <strong>1. You Draw!</strong><br>
+                            Draw foe and player cards face down. Foes flip first, then players.
                         </div>
                     </div>
                     <div>
-                        <div class="explanation">
-                            <u>Attack Phase</u>: Combine Power(<span stat="pwr"><span></span></span>) to defeat foes.
+                        <div class="explanation small">
+                            <strong>2. You Attack!</strong><br>
+                            Players combine Power <span stat="pwr"><span></span></span> cards to defeat foes. Foes lose 1 Health for each <span stat="pwr"><span></span></span> used on it. Foes with no health remaining are defeated, and removed.
                         </div>
                     </div>
                     <div>
-                        <div class="explanation">
-                            <u>Defense Phase</u>: Protect from foes using Block(<span stat="blk"><span></span></span>) .
+                        <div class="explanation small">
+                            <strong>3. You Defend!</strong><br>
+                            Players play Block <span stat="blk"><span></span></span> cards on foes to defend themselves. Each foe attacks each player with its <span stat="pwr"><span></span></span>. Players lose 1 health for each unblocked foe.
                         </div>
                     </div>
                     <div>
-                        <div class="explanation">
-                            <u>Buy Phase</u>: Spend Coins(<span stat="lck"><span></span></span>) to buy or draw shop cards.
+                        <div class="explanation small">
+                            <strong>4. You Buy!</strong><br>
+                            Defeated foes reward Dollars <span stat="lck"><span></span></span> to each player to buy cards. When bought, a new card is drawn to replace it. Players may spend a <span stat="lck"><span></span></span> to replace a card in your shop.
                         </div>
                     </div>
                     <div>
-                        <div class="explanation">
-                            Return cards to your discard.
+                        <div class="explanation small">
+                            <strong>You... Lose?</strong><br>
+                            If any player has lost 5 health all players lose. Susberg falls into darkness... until next time?
+                        </div>
+                    </div>
+                    <div>
+                        <div class="explanation small">
+                            <strong>You WIN!!!</strong><br>
+                            Once all foes have been defeated, CELEBRATE! Susberg has been saved!
                         </div>
                     </div>
 
@@ -355,6 +429,7 @@
             </div>
         </div>
     </li>
+
     <li>
         <div class="wrapper" id="api-test">
             <div class="card card-back extra athlete">
@@ -442,7 +517,7 @@
 
             <?php include 'print.php'; ?>
 
-            <div cost=""><div></div></div>
+            <div cost="3"><div></div></div>
             <div class="image">
                 <img src="art/karate-gi.png">
             </div>
@@ -466,7 +541,7 @@
 
             <?php include 'print.php'; ?>
 
-            <div cost="2"><div></div></div>
+            <div cost="S"><div></div></div>
             <div class="image">
                 <img src="art/karate-gi.png">
             </div>
@@ -520,7 +595,7 @@
 
             <?php include 'print.php'; ?>
 
-            <div cost="2"><div></div></div>
+            <div cost="1"><div></div></div>
             <div class="image">
                 <img src="art/karate-gi.png">
             </div>
@@ -705,6 +780,59 @@
             </div>
             <div class="reward"><span stat="lck"><span></span><span></span></span></div>
             <div level="3"></div>
+            <div class="set">
+                <img src="extras/exp-ks.png">
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="card enemy">
+            <div class="bg pattern-vertical-stripes-md"></div>
+
+            <?php include 'print.php'; ?>
+
+            <div power="4"><div></div></div>
+            <div health="5"><div></div></div>
+            <div class="image">
+                <img src="monster/_staggering-beauty.webp">
+            </div>
+            <div name="Beauty Worm"><span>Beauty Worm</span></div>
+            <div class="rules">
+                <div class="rule">
+                    Wiggle this card for<br>it to freak out.
+                </div>
+            </div>
+            <div class="reward"><span stat="lck"><span></span><span></span></span></div>
+            <div level="3"></div>
+            <div class="set">
+                <img src="extras/exp-ks.png">
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="card enemy">
+            <div class="bg pattern-vertical-stripes-md"></div>
+
+            <?php include 'print.php'; ?>
+
+            <div power="6"><div></div></div>
+            <div health="6"><div></div></div>
+            <div class="image">
+                <img src="monster/_proxy.webp">
+            </div>
+            <div name="Proxy"><span>Proxy</span></div>
+            <div class="rules">
+                <div class="rule">
+                    Wherever you look,<br>there it is.
+                </div>
+            </div>
+            <div class="reward"><span stat="lck"><span></span><span></span></span></div>
+            <div level="3"></div>
+            <div class="set">
+                <img src="extras/exp-ks.png">
+            </div>
         </div>
     </li>
 

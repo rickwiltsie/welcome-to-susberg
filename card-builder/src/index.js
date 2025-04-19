@@ -274,6 +274,7 @@ function storeEnemies(rowData) {
                 health: card.values[5].formattedValue ?? null,
                 rule: card.values[6].formattedValue ?? null,
                 reward: card.values[7].formattedValue ?? null,
+                set: card.values[8].formattedValue ?? null,
             }
 
             enemies.push(storeCard);
@@ -419,6 +420,15 @@ function showEnemies()
             newCard.querySelector('div[level]').remove();
         }
 
+        if (card.set) {
+            let url = './extras/exp-'+card.set.toLowerCase()+'.png';
+            getBase64Image(url, function(base64image){
+                newCard.querySelector('div.set img').setAttribute('src', base64image);
+            });
+        } else {
+            newCard.querySelector('div.set').remove();
+        }
+
         mainGrid.appendChild(newItem);
     }
 }
@@ -427,7 +437,7 @@ function showEnemies()
 
 function transformRules(rules, isReward = false) {
 
-    let stats = ['PWR', 'BLK', 'LCK', 'MSC'];
+    let stats = ['PWR', 'BLK', 'LCK', 'MSC', 'ENG'];
 
     if (!rules) {
         return rules;
@@ -560,13 +570,12 @@ function saveImages(scaleFactor) {
     cardCount = cards.length;
     let currentExtra = 1;
 
-    let namesOnly = ['rattling skeleton'];
+    let namesOnly = ['grimmest reaper'];
     let pageCount = 1;
 
     for (let i in cards) {
 
         let cardElement = cards[i];
-
 
         if (scaleFactor == 'print') {
             cardElement.parentElement.classList.add('print-ltt');

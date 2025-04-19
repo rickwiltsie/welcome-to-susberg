@@ -47,7 +47,7 @@ div[stat=pwr] {
     padding-right: .35in;
 }
 span[stat=pwr] {
-    padding-right: .09in;
+    padding-right: .12in;
 }
 *[stat=pwr] span:before{
     margin-left: -.02in;
@@ -73,16 +73,17 @@ div[stat=blk] {
     padding-right: .25in;
 }
 span[stat=blk] {
-    padding-right: .06in;
+    padding-right: .09in;
 }
 *[stat=blk] span:before{
-    transform: rotate(10deg);
+    transform: rotate(6.5deg);
+    margin-left: -.01in;
 }
 div[stat=blk] span {
     width: .3in;
 }
 span[stat=blk] span {
-    width: .2in;
+    width: .18in;
 }
 div[stat=blk] span:before{
     width: .6in;
@@ -120,6 +121,10 @@ span[stat=lck] span:before {
     width: .35in;
     height: .35in
 }
+.reward span[stat=lck] {
+    scale: .8;
+    transform-origin: bottom left;
+}
 
 
 
@@ -146,4 +151,33 @@ span[stat=msc] span:before {
     width: .3in;
     height: .3in;
     margin-left: -.02in;
+}
+
+
+
+
+div[stat=eng] {
+    padding-right: .25in;
+}
+span[stat=eng] {
+    padding-right: .09in;
+}
+*[stat=eng] span:before{
+    transform: rotate(0deg);
+    margin-left: -.01in;
+}
+div[stat=eng] span {
+    width: .2in;
+}
+span[stat=eng] span {
+    width: .18in;
+}
+div[stat=eng] span:before{
+    width: .6in;
+    height: .6in;
+    margin-left: -.06in;
+}
+span[stat=eng] span:before {
+    width: .3in;
+    height: .3in;
 }
