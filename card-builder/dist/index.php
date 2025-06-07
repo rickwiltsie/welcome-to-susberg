@@ -99,7 +99,7 @@
                 <div class="rules">
                     <div>
                         <div class="explanation">
-                            Athletes have the ability to trash cards, removing them from the game. Some cards even allow them to come back with powerful effects.
+                            Athletes have the ability to trash cards, removing them from the game. Some cards even have powerful effects when they are trashed.
                         </div>
                     </div>
                     <div>
@@ -191,7 +191,7 @@
                     </div>
                     <div>
                         <div class="explanation">
-                            Inventor cards can tinker a deck by letting the player look at the top card and either keep it there or discard it.
+                            Inventor cards can tinker a player's deck by letting the player look at the top card and either keep it there or discard it.
                         </div>
                     </div>
 

@@ -570,7 +570,7 @@ function saveImages(scaleFactor) {
     cardCount = cards.length;
     let currentExtra = 1;
 
-    let namesOnly = ['grimmest reaper'];
+    let namesOnly = [];
     let pageCount = 1;
 
     for (let i in cards) {
