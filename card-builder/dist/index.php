@@ -114,7 +114,7 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra instruction athlete">
+            <div class="card extra instruction athlete">
                 <div class="bg pattern-diagonal-stripes-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
@@ -157,7 +157,7 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra instruction artist">
+            <div class="card extra instruction artist">
                 <div class="bg pattern-triangles-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
@@ -194,14 +194,13 @@
                             Inventor cards can tinker a player's deck by letting the player look at the top card and either keep it there or discard it.
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra instruction inventor">
+            <div class="card extra instruction inventor">
                 <div class="bg pattern-checks-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
@@ -221,7 +220,7 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra instruction inventor">
+            <div class="card extra instruction inventor">
                 <div class="bg pattern-checks-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
@@ -272,7 +271,7 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra instruction musician">
+            <div class="card extra instruction musician">
                 <div class="bg pattern-zigzag-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
@@ -292,7 +291,7 @@
     </li>
     <li>
         <div class="wrapper" id="api-test">
-            <div class="card card-back extra instruction musician">
+            <div class="card extra instruction musician">
                 <div class="bg pattern-zigzag-md"></div>
                 <?php include 'print.php'; ?>
                 <div class="image"></div>
